@@ -1,0 +1,27 @@
+# 忽略特定的文件夹
+data/
+dataset/
+imgs/
+Thesis/
+model/
+code/
+
+# 忽略jupyter notebook检查点
+.ipynb_checkpoints/
+
+# 数据文件
+*.jsonl
+*.csv
+*.h5
+*.npy
+*.npz
+*.pkl
+*.joblib
+*.env
+*.pt
+
+# 环境相关
+.env
+venv/
+.env/
+env_LLM/firefly-train-1.1M.jsonl
