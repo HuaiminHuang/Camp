@@ -25,5 +25,5 @@ AI-Guide-and-Demos-zh_CN-master/
 .env
 venv/
 .env/
-.cache/
+cache/
 
