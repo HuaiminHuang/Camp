@@ -25,4 +25,5 @@ AI-Guide-and-Demos-zh_CN-master/
 .env
 venv/
 .env/
-env_LLM/firefly-train-1.1M.jsonl
+.cache/
+
