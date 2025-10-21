@@ -1,0 +1,658 @@
+{"entities": [{"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "法莫替丁", "type": "西医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "疏肝行气", "type": "中医治则"}, {"text": "调神解郁", "type": "中医治则"}, {"text": "推拿", "type": "中医治疗"}, {"text": "腹泻", "type": "临床表现"}]}
+{"entities": [{"text": "腹痛", "type": "临床表现"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "头晕", "type": "临床表现"}, {"text": "腹胀胁满", "type": "临床表现"}, {"text": "大便溏薄", "type": "临床表现"}, {"text": "舌苔薄黄腻", "type": "临床表现"}, {"text": "脉细微弦", "type": "临床表现"}]}
+{"entities": [{"text": "七方胃痛胶囊", "type": "中医治疗"}, {"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "腹泻", "type": "临床表现"}]}
+{"entities": [{"text": "枳术丸加味", "type": "方剂"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "大便", "type": "临床表现"}, {"text": "舌苔黄腻", "type": "临床表现"}]}
+{"entities": [{"text": "瘀毒根深", "type": "中医证候"}]}
+{"entities": [{"text": "疏香灸", "type": "中医治疗"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "当归", "type": "中药"}]}
+{"entities": [{"text": "痛泻要方加味", "type": "方剂"}, {"text": "心理疗法", "type": "其他治疗"}]}
+{"entities": [{"text": "金银花", "type": "中药"}, {"text": "连翘", "type": "中药"}, {"text": "牛蒡子", "type": "中药"}, {"text": "荆芥", "type": "中药"}, {"text": "防风", "type": "中药"}, {"text": "藿香", "type": "中药"}, {"text": "佩兰", "type": "中药"}, {"text": "碧玉散", "type": "中药"}, {"text": "桔梗", "type": "中药"}, {"text": "枳壳", "type": "中药"}]}
+{"entities": [{"text": "身面发黄", "type": "临床表现"}, {"text": "目黄如金", "type": "临床表现"}, {"text": "脘痞纳差", "type": "临床表现"}, {"text": "厌食泛恶", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}, {"text": "尿如柏汁", "type": "临床表现"}, {"text": "精神萎顿", "type": "临床表现"}, {"text": "胸胁疼痛", "type": "临床表现"}, {"text": "苔黄厚", "type": "临床表现"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "头晕", "type": "临床表现"}]}
+{"entities": [{"text": "穴位埋线", "type": "中医治疗"}, {"text": "肝郁气滞", "type": "中医证候"}]}
+{"entities": [{"text": "血活素", "type": "中医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "急黄", "type": "中医诊断"}, {"text": "毒陷心包", "type": "中医证候"}]}
+{"entities": [{"text": "香砂枳术颗粒", "type": "中医治疗"}, {"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "针刺", "type": "中医治疗"}, {"text": "针刺", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "子午流注开穴疗法", "type": "中医治疗"}]}
+{"entities": [{"text": "四磨汤", "type": "方剂"}, {"text": "新生儿胃食管反流", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "脾胃虚弱", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "滋阴", "type": "中医治则"}, {"text": "软坚", "type": "中医治则"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "下痢日久脾肾阳虚", "type": "中医证候"}, {"text": "寒湿内停", "type": "中医证候"}, {"text": "肝气郁结", "type": "中医证候"}, {"text": "肝脏肿大", "type": "临床表现"}, {"text": "化气利水", "type": "中医治则"}, {"text": "腹水", "type": "中医诊断"}, {"text": "臌胀", "type": "中医诊断"}]}
+{"entities": [{"text": "五苓散", "type": "方剂"}]}
+{"entities": [{"text": "和胃冲剂", "type": "方剂"}, {"text": "肝胃不和", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "腹胀", "type": "临床表现"}, {"text": "尿少", "type": "临床表现"}]}
+{"entities": [{"text": "恶心呕吐", "type": "临床表现"}, {"text": "苔黄", "type": "临床表现"}]}
+{"entities": [{"text": "肝内小结石", "type": "西医诊断"}]}
+{"entities": [{"text": "肝硬化腹水", "type": "西医诊断"}, {"text": "积聚", "type": "中医诊断"}, {"text": "臌胀", "type": "中医诊断"}]}
+{"entities": [{"text": "半夏厚朴汤加味", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "超声离子导入", "type": "其他治疗"}, {"text": "腹痛", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "香砂六君子汤", "type": "方剂"}, {"text": "贴敷", "type": "中医治疗"}, {"text": "香砂六君子汤", "type": "方剂"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "针刺", "type": "中医治疗"}, {"text": "慢性功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "儿童功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "滋阴润肠口服液", "type": "中医治疗"}, {"text": "老年功能性便", "type": "西医诊断"}]}
+{"entities": [{"text": "脾胃气虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "梅花灸", "type": "中医治疗"}, {"text": "穴位贴敷", "type": "中医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "痰瘀互结", "type": "中医证候"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "退黄", "type": "中医治则"}]}
+{"entities": [{"text": "浮肿", "type": "临床表现"}]}
+{"entities": [{"text": "中风后遗症功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "清肝和胃饮", "type": "方剂"}, {"text": "马来酸曲美布汀片", "type": "西医治疗"}, {"text": "肝胃郁热", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "健胃消胀颗粒", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "丝瓜络", "type": "中药"}]}
+{"entities": [{"text": "增液承气汤加减", "type": "方剂"}]}
+{"entities": [{"text": "喘脱", "type": "中医诊断"}, {"text": "水鼓", "type": "中医诊断"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "脾胃湿热", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "水臌", "type": "中医诊断"}]}
+{"entities": [{"text": "益肠汤", "type": "方剂"}, {"text": "柴胡", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "陈皮", "type": "中药"}, {"text": "茯苓", "type": "中药"}, {"text": "防风", "type": "中药"}, {"text": "木香", "type": "中药"}, {"text": "白芍", "type": "中药"}, {"text": "五味子", "type": "中药"}, {"text": "甘草", "type": "中药"}]}
+{"entities": [{"text": "和胃冲剂", "type": "方剂"}]}
+{"entities": [{"text": "胆囊炎", "type": "西医诊断"}]}
+{"entities": [{"text": "浊毒内蕴", "type": "中医证候"}]}
+{"entities": [{"text": "嗳气返酸", "type": "临床表现"}, {"text": "饮食减少", "type": "临床表现"}, {"text": "胃脘疼痛", "type": "临床表现"}]}
+{"entities": [{"text": "小陷胸汤", "type": "方剂"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "温中健脾", "type": "中医治则"}, {"text": "脾胃虚寒", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "六味能消胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "肝硬化腹水", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "脾虚气滞", "type": "中医证候"}, {"text": "健脾理气方", "type": "方剂"}]}
+{"entities": [{"text": "盐酸依托必利", "type": "西医治疗"}]}
+{"entities": [{"text": "甘草", "type": "中药"}, {"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "瑞巴派特", "type": "西医治疗"}]}
+{"entities": [{"text": "贝洛纳", "type": "西医治疗"}]}
+{"entities": [{"text": "小陷胸汤", "type": "方剂"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}, {"text": "腹部不适", "type": "临床表现"}, {"text": "便秘", "type": "临床表现"}, {"text": "腹痛", "type": "临床表现"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "寒热错杂", "type": "中医证候"}]}
+{"entities": [{"text": "急性重症肝炎", "type": "西医诊断"}]}
+{"entities": [{"text": "身黄", "type": "临床表现"}, {"text": "肝细胞性黄疸", "type": "西医诊断"}]}
+{"entities": [{"text": "腹水消失", "type": "临床表现"}]}
+{"entities": [{"text": "胃痛", "type": "临床表现"}, {"text": "痞满", "type": "临床表现"}, {"text": "纳呆", "type": "临床表现"}]}
+{"entities": [{"text": "脉数大无力", "type": "临床表现"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "腹胀", "type": "临床表现"}, {"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "柴胡", "type": "中药"}]}
+{"entities": [{"text": "血瘀热毒", "type": "中医证候"}]}
+{"entities": [{"text": "逍遥散", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "胃宁胶囊", "type": "中医治疗"}]}
+{"entities": [{"text": "胃康宁", "type": "中医治疗"}]}
+{"entities": [{"text": "寒热错杂", "type": "中医证候"}]}
+{"entities": [{"text": "六味安消胶囊", "type": "中医治疗"}]}
+{"entities": [{"text": "疏肝理气", "type": "中医治则"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "健胃消胀颗粒", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝胃不和", "type": "中医证候"}, {"text": "健胃消胀颗粒", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "胃食管反流性咽喉炎", "type": "西医诊断"}]}
+{"entities": [{"text": "脾肾阳虚", "type": "中医证候"}]}
+{"entities": [{"text": "急黄", "type": "中医诊断"}, {"text": "鼓胀", "type": "中医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "温针灸", "type": "中医治疗"}]}
+{"entities": [{"text": "恶寒", "type": "临床表现"}]}
+{"entities": [{"text": "疏肝化瘀", "type": "中医治则"}]}
+{"entities": [{"text": "面色黧黑", "type": "临床表现"}, {"text": "巩膜重度黄染", "type": "临床表现"}, {"text": "厌食", "type": "临床表现"}, {"text": "小便深黄", "type": "临床表现"}, {"text": "大便秘结", "type": "临床表现"}, {"text": "苔白腻", "type": "临床表现"}, {"text": "脉细", "type": "临床表现"}]}
+{"entities": [{"text": "针灸", "type": "中医治疗"}, {"text": "老年慢性功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "桃核承气汤加味", "type": "方剂"}, {"text": "抵当丸", "type": "方剂"}]}
+{"entities": [{"text": "黄疸渐退", "type": "临床表现"}, {"text": "食欲渐增", "type": "临床表现"}]}
+{"entities": [{"text": "中老年功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "肝胃不和", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "寒热错杂", "type": "中医证候"}, {"text": "乌梅丸", "type": "方剂"}, {"text": "中药敷贴", "type": "中医治疗"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}, {"text": "穴位埋线", "type": "中医治疗"}]}
+{"entities": [{"text": "食欲不振", "type": "临床表现"}, {"text": "肝区疼痛", "type": "临床表现"}]}
+{"entities": [{"text": "党参", "type": "中药"}, {"text": "炒白术", "type": "中药"}, {"text": "炒柴胡", "type": "中药"}, {"text": "炙黄芪", "type": "中药"}, {"text": "当归", "type": "中药"}, {"text": "酸枣仁", "type": "中药"}, {"text": "陈皮", "type": "中药"}, {"text": "肉桂", "type": "中药"}, {"text": "炒白芍", "type": "中药"}, {"text": "大枣", "type": "中药"}, {"text": "赤小豆", "type": "中药"}, {"text": "炙甘草", "type": "中药"}, {"text": "生姜", "type": "中药"}]}
+{"entities": [{"text": "枳术丸", "type": "方剂"}, {"text": "中老年慢性功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "耳穴贴压", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "奥美拉唑", "type": "西医治疗"}, {"text": "多潘立酮", "type": "西医治疗"}]}
+{"entities": [{"text": "滋阴养血润肠汤", "type": "方剂"}, {"text": "津亏血少", "type": "中医证候"}, {"text": "老年功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "当归", "type": "中药"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "四逆散加味", "type": "方剂"}, {"text": "慢性功能性便秘", "type": "西医诊断"}, {"text": "肠道气滞", "type": "中医证候"}]}
+{"entities": [{"text": "四逆散", "type": "方剂"}]}
+{"entities": [{"text": "气滞血瘀", "type": "中医证候"}]}
+{"entities": [{"text": "补气运脾汤", "type": "方剂"}, {"text": "雷贝拉唑肠溶胶囊", "type": "西医治疗"}, {"text": "枸橼酸莫沙必利分散片", "type": "西医治疗"}, {"text": "氟哌噻吨美利曲辛", "type": "西医治疗"}, {"text": "耳穴压豆", "type": "中医治疗"}]}
+{"entities": [{"text": "湿热发黄", "type": "中医证候"}]}
+{"entities": [{"text": "六味地黄丸、二至丸", "type": "方剂"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}, {"text": "肝胃郁热", "type": "中医证候"}, {"text": "柴胡疏肝散", "type": "方剂"}, {"text": "左金丸", "type": "方剂"}]}
+{"entities": [{"text": "梅花灸", "type": "中医治疗"}, {"text": "心理干预", "type": "其他治疗"}, {"text": "脾胃气虚", "type": "中医证候"}, {"text": "功能性消化不良伴抑郁症", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "急性黄疸型肝炎", "type": "西医诊断"}, {"text": "寒湿郁遏发黄", "type": "中医证候"}]}
+{"entities": [{"text": "党参", "type": "中药"}]}
+{"entities": [{"text": "慢性萎缩性胃炎伴异型增生", "type": "西医诊断"}]}
+{"entities": [{"text": "健脾消积颗粒", "type": "中医治疗"}, {"text": "脾胃湿热", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "柴胡疏肝散", "type": "方剂"}, {"text": "枳术丸加减", "type": "方剂"}, {"text": "肝胃不和", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "行气活血", "type": "中医治则"}, {"text": "健脾利水", "type": "中医治则"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "枳术宽中胶囊", "type": "中医治疗"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "多烯磷脂酰胆碱", "type": "西医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "胃复方", "type": "方剂"}, {"text": "脾虚气滞", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝郁脾虚", "type": "中医证候"}, {"text": "加味逍遥散", "type": "方剂"}, {"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "苍术", "type": "中药"}]}
+{"entities": [{"text": "脾虚气滞", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "小陷胸汤", "type": "方剂"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "安络化纤丸", "type": "中医治疗"}]}
+{"entities": [{"text": "面色萎黄不鲜", "type": "临床表现"}, {"text": "目珠黄染", "type": "临床表现"}, {"text": "小便黄赤", "type": "临床表现"}, {"text": "大便淡黄有时灰白", "type": "临床表现"}, {"text": "腹部膨胀", "type": "临床表现"}, {"text": "精神不振", "type": "临床表现"}, {"text": "喂乳后欲呕", "type": "临床表现"}, {"text": "苔薄腻", "type": "临床表现"}]}
+{"entities": [{"text": "黄疸", "type": "临床表现"}, {"text": "足肿", "type": "临床表现"}]}
+{"entities": [{"text": "小便短少", "type": "临床表现"}]}
+{"entities": [{"text": "便秘型肠易激综合征", "type": "西医诊断"}, {"text": "肝郁气滞", "type": "中医证候"}, {"text": "逍遥散", "type": "方剂"}]}
+{"entities": [{"text": "老十针", "type": "中医治疗"}, {"text": "肝气郁结", "type": "中医证候"}, {"text": "餐后不适综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "赤芍", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "寒热错杂", "type": "中医证候"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "饮食增", "type": "临床表现"}, {"text": "精神佳", "type": "临床表现"}]}
+{"entities": [{"text": "针刺梁丘穴", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "白术", "type": "中药"}, {"text": "川石斛", "type": "中药"}, {"text": "知母", "type": "中药"}, {"text": "泽泻", "type": "中药"}, {"text": "蒲黄", "type": "中药"}, {"text": "当归", "type": "中药"}, {"text": "黄柏", "type": "中药"}, {"text": "玉竹", "type": "中药"}, {"text": "北沙参", "type": "中药"}, {"text": "茵陈", "type": "中药"}, {"text": "花粉", "type": "中药"}, {"text": "虎杖", "type": "中药"}, {"text": "猪苓", "type": "中药"}, {"text": "生苡仁", "type": "中药"}, {"text": "半枝莲", "type": "中药"}, {"text": "白石英", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "隔药灸", "type": "中医治疗"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "通腑开窍", "type": "中医治则"}]}
+{"entities": [{"text": "脾胃湿热", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "乏力", "type": "临床表现"}]}
+{"entities": [{"text": "胃康乐胶囊Ⅱ号", "type": "中医治疗"}, {"text": "香附", "type": "中药"}, {"text": "砂仁", "type": "中药"}, {"text": "山药", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "佛手", "type": "中药"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "胸腹、肢体肌肉已见明显增多", "type": "临床表现"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "夏连薏英汤", "type": "方剂"}, {"text": "慢性萎缩性胃炎癌前病变", "type": "西医诊断"}, {"text": "湿热中阻", "type": "中医证候"}]}
+{"entities": [{"text": "肝功能正常", "type": "临床表现"}]}
+{"entities": [{"text": "奥美拉唑", "type": "西医治疗"}, {"text": "胃食管反流性咽喉炎", "type": "西医诊断"}]}
+{"entities": [{"text": "疏肝健脾", "type": "中医治则"}]}
+{"entities": [{"text": "中医情志调理", "type": "中医治疗"}, {"text": "焦虑", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "儿童功能性便秘", "type": "西医诊断"}, {"text": "推拿", "type": "中医治疗"}]}
+{"entities": [{"text": "生物反馈治疗", "type": "其他治疗"}, {"text": "生白术", "type": "中药"}]}
+{"entities": [{"text": "右上腹疼痛", "type": "临床表现"}, {"text": "呕吐不食", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "低热", "type": "临床表现"}, {"text": "大便秘结", "type": "临床表现"}, {"text": "舌苔黄厚腻", "type": "临床表现"}, {"text": "脉弦滑", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "麻黄", "type": "中药"}, {"text": "桑皮", "type": "中药"}]}
+{"entities": [{"text": "郁金", "type": "中药"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "肝胃郁热", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "自拟疏肝通腑汤", "type": "方剂"}, {"text": "气滞", "type": "中医证候"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "建中振萎汤", "type": "方剂"}, {"text": "瘀阻胃络", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "慢性胃炎", "type": "西医诊断"}, {"text": "胃下垂", "type": "西医诊断"}]}
+{"entities": [{"text": "肠道津亏", "type": "中医证候"}]}
+{"entities": [{"text": "苔白厚", "type": "临床表现"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "气滞血瘀", "type": "中医证候"}]}
+{"entities": [{"text": "莫沙必利", "type": "西医治疗"}, {"text": "选时穴位按摩", "type": "中医治疗"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}, {"text": "莫沙必利", "type": "西医治疗"}]}
+{"entities": [{"text": "脾胃气虚", "type": "中医证候"}]}
+{"entities": [{"text": "老十针", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎伴肠上皮化生", "type": "西医诊断"}]}
+{"entities": [{"text": "阴虚肠燥", "type": "中医证候"}, {"text": "通乐颗粒", "type": "中医治疗"}]}
+{"entities": [{"text": "腹痛", "type": "临床表现"}, {"text": "腹部不适", "type": "临床表现"}, {"text": "腹泻", "type": "临床表现"}]}
+{"entities": [{"text": "穴位贴药", "type": "中医治疗"}]}
+{"entities": [{"text": "自拟化痰行瘀方", "type": "方剂"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "复方丁香开胃贴", "type": "中医治疗"}, {"text": "心功能不全伴功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}, {"text": "肠康方", "type": "中医治疗"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "黄疸", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}]}
+{"entities": [{"text": "半夏泻心汤", "type": "方剂"}, {"text": "胃食管反流性咳嗽", "type": "西医诊断"}]}
+{"entities": [{"text": "穴位埋线", "type": "中医治疗"}]}
+{"entities": [{"text": "脾胃虚寒", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝郁脾虚", "type": "中医证候"}, {"text": "柴芍六君子汤", "type": "方剂"}, {"text": "半夏泻心汤", "type": "方剂"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "贝洛纳", "type": "西医治疗"}]}
+{"entities": [{"text": "泰胃美", "type": "西医治疗"}, {"text": "胃食管反流性疾病", "type": "西医诊断"}]}
+{"entities": [{"text": "肝胆气郁", "type": "中医证候"}]}
+{"entities": [{"text": "香附", "type": "中药"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "寒湿型", "type": "中医证候"}]}
+{"entities": [{"text": "腹水已消", "type": "临床表现"}]}
+{"entities": [{"text": "木香流气饮", "type": "方剂"}, {"text": "茵陈", "type": "中药"}, {"text": "炙鳖甲", "type": "中药"}, {"text": "猪苓", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "腹部火龙疗法", "type": "中医治疗"}, {"text": "心理疏导", "type": "其他治疗"}, {"text": "脾胃气虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "乌梅丸", "type": "方剂"}, {"text": "中药敷贴", "type": "中医治疗"}, {"text": "寒热错杂", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "面色咣白", "type": "临床表现"}, {"text": "浮肿", "type": "临床表现"}, {"text": "形寒畏冷", "type": "临床表现"}, {"text": "倦怠无力", "type": "临床表现"}, {"text": "饥不欲食", "type": "临床表现"}, {"text": "胆怯", "type": "临床表现"}, {"text": "易惊", "type": "临床表现"}, {"text": "肝区偶觉刺痛", "type": "临床表现"}, {"text": "小便或清或黄", "type": "临床表现"}, {"text": "大便溏薄", "type": "临床表现"}]}
+{"entities": [{"text": "电针", "type": "中医治疗"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "胰酶肠溶胶囊", "type": "西医治疗"}, {"text": "多潘立酮片", "type": "西医治疗"}, {"text": "食后腹胀", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "胃脘疼痛", "type": "临床表现"}]}
+{"entities": [{"text": "半夏", "type": "中药"}, {"text": "厚朴", "type": "中药"}]}
+{"entities": [{"text": "诸证大减", "type": "临床表现"}]}
+{"entities": [{"text": "非酒精性脂肪性肝", "type": "西医诊断"}]}
+{"entities": [{"text": "隔药灸", "type": "中医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "多烯磷脂酰胆碱", "type": "西医治疗"}]}
+{"entities": [{"text": "莫沙必利", "type": "西医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "六味安消", "type": "中医治疗"}]}
+{"entities": [{"text": "腹泻型肠易激综合征", "type": "西医诊断"}, {"text": "穴位贴敷", "type": "中医治疗"}]}
+{"entities": [{"text": "脾虚气滞", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "开胃进食汤超微配方颗粒", "type": "中医治疗"}, {"text": "痞满证", "type": "中医诊断"}, {"text": "慢性浅表性胃炎", "type": "西医诊断"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "脾胃虚寒", "type": "中医证候"}, {"text": "韦氏整脊手法", "type": "中医治疗"}]}
+{"entities": [{"text": "解毒扶正治萎方", "type": "方剂"}, {"text": "党参", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "黄芪", "type": "中药"}, {"text": "蒲公英", "type": "中药"}, {"text": "重楼", "type": "中药"}, {"text": "丹参", "type": "中药"}]}
+{"entities": [{"text": "头昏", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "手心发热", "type": "临床表现"}]}
+{"entities": [{"text": "呃逆", "type": "中医诊断"}]}
+{"entities": [{"text": "食后腹胀", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "胃脘疼痛", "type": "临床表现"}, {"text": "烧心感", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "恶心呕吐", "type": "临床表现"}, {"text": "胸胁胀痛", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "脾虚气滞", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "腹泻", "type": "临床表现"}, {"text": "腹痛", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "肛门下坠感", "type": "临床表现"}]}
+{"entities": [{"text": "枳术宽中胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "胃食管反流性咳嗽", "type": "西医诊断"}, {"text": "咳嗽", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}]}
+{"entities": [{"text": "瑞舒伐他汀", "type": "西医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "津亏肠燥气滞", "type": "中医证候"}, {"text": "便秘", "type": "西医诊断"}, {"text": "助阳通便汤", "type": "方剂"}, {"text": "便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "肝病治疗仪", "type": "西医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "难寐", "type": "临床表现"}]}
+{"entities": [{"text": "复方畅胃宁", "type": "中医治疗"}, {"text": "枳壳", "type": "中药"}, {"text": "佛手", "type": "中药"}, {"text": "柴胡", "type": "中药"}, {"text": "砂仁", "type": "中药"}, {"text": "生山楂", "type": "中药"}, {"text": "生麦芽", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "吗丁啉", "type": "西医治疗"}]}
+{"entities": [{"text": "川芎", "type": "中药"}]}
+{"entities": [{"text": "心理干预", "type": "其他治疗"}, {"text": "慢性萎缩性胃炎伴抑郁", "type": "西医诊断"}]}
+{"entities": [{"text": "调肝理脾", "type": "中医治则"}, {"text": "行气活血", "type": "中医治则"}, {"text": "健脾利水", "type": "中医治则"}]}
+{"entities": [{"text": "川牛膝", "type": "中药"}, {"text": "丝瓜络", "type": "中药"}]}
+{"entities": [{"text": "厌食", "type": "中医诊断"}]}
+{"entities": [{"text": "痰瘀互结", "type": "中医证候"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪性肝", "type": "西医诊断"}]}
+{"entities": [{"text": "胃腑实热内结", "type": "中医证候"}]}
+{"entities": [{"text": "氟哌噻吨美利曲辛片", "type": "西医治疗"}, {"text": "功能性消化不良伴焦虑", "type": "西医诊断"}]}
+{"entities": [{"text": "炙甘草", "type": "中药"}]}
+{"entities": [{"text": "急性黄疸型病毒性乙型肝炎", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "生活方式干预", "type": "其他治疗"}]}
+{"entities": [{"text": "推拿", "type": "中医治疗"}]}
+{"entities": [{"text": "面色晦暗", "type": "临床表现"}, {"text": "舌质暗红", "type": "临床表现"}, {"text": "舌紫有瘀斑", "type": "临床表现"}, {"text": "气滞血瘀", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "上腹痛", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "烧心", "type": "临床表现"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "脾胃虚寒", "type": "中医证候"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "当归", "type": "中药"}]}
+{"entities": [{"text": "匹维溴铵", "type": "西医治疗"}, {"text": "匹维溴铵", "type": "西医治疗"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "形体虚弱", "type": "临床表现"}, {"text": "黄疸", "type": "中医诊断"}, {"text": "头痛", "type": "临床表现"}, {"text": "右肋隐痛", "type": "临床表现"}, {"text": "体倦", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}, {"text": "口淡", "type": "临床表现"}, {"text": "尿黄", "type": "临床表现"}, {"text": "苔白厚", "type": "临床表现"}]}
+{"entities": [{"text": "化浊颗粒", "type": "中医治疗"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}, {"text": "茵陈", "type": "中药"}, {"text": "栀子", "type": "中药"}, {"text": "草蔻", "type": "中药"}, {"text": "薏米", "type": "中药"}, {"text": "藿香", "type": "中药"}, {"text": "川厚朴", "type": "中药"}, {"text": "半夏", "type": "中药"}, {"text": "滑石", "type": "中药"}, {"text": "车前子", "type": "中药"}, {"text": "甘草", "type": "中药"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "脾气亏", "type": "中医诊断"}]}
+{"entities": [{"text": "心理干预", "type": "其他治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "扶正理气汤", "type": "方剂"}, {"text": "党参", "type": "中药"}, {"text": "甘草", "type": "中药"}, {"text": "陈皮", "type": "中药"}, {"text": "台乌", "type": "中药"}, {"text": "当归", "type": "中药"}, {"text": "桃仁", "type": "中药"}, {"text": "炒谷麦芽", "type": "中药"}]}
+{"entities": [{"text": "黄疸渐退", "type": "临床表现"}]}
+{"entities": [{"text": "寒湿夹瘀", "type": "中医证候"}, {"text": "阴黄", "type": "中医诊断"}]}
+{"entities": [{"text": "隔药灸", "type": "中医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "糖尿病性功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "荆芥", "type": "中药"}, {"text": "柴胡", "type": "中药"}]}
+{"entities": [{"text": "肝胃不和", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "运动性腹痛", "type": "西医诊断"}]}
+{"entities": [{"text": "面色萎黄", "type": "临床表现"}, {"text": "疲惫不支", "type": "临床表现"}, {"text": "腹痛阵作", "type": "临床表现"}, {"text": "肠鸣不已", "type": "临床表现"}, {"text": "大便干结", "type": "临床表现"}, {"text": "心悸少眠", "type": "临床表现"}, {"text": "纳谷欠馨", "type": "临床表现"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "脾胃湿热", "type": "中医证候"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "浮肿", "type": "临床表现"}]}
+{"entities": [{"text": "肝胆湿热", "type": "中医证候"}, {"text": "清胆汤", "type": "方剂"}]}
+{"entities": [{"text": "旋覆花", "type": "中药"}, {"text": "代赭石", "type": "中药"}, {"text": "黄连", "type": "中药"}, {"text": "吴茱萸", "type": "中药"}, {"text": "厚朴", "type": "中药"}, {"text": "甘草", "type": "中药"}, {"text": "土茯苓", "type": "中药"}, {"text": "桃仁", "type": "中药"}, {"text": "赤芍", "type": "中药"}, {"text": "香附", "type": "中药"}]}
+{"entities": [{"text": "儿童功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "目黄", "type": "临床表现"}, {"text": "尿黄如浓茶", "type": "临床表现"}, {"text": "精神", "type": "临床表现"}, {"text": "食欲可", "type": "临床表现"}, {"text": "口不苦", "type": "临床表现"}, {"text": "苔白滑", "type": "临床表现"}, {"text": "脉细", "type": "临床表现"}]}
+{"entities": [{"text": "辗转不安", "type": "临床表现"}, {"text": "大承气汤", "type": "方剂"}]}
+{"entities": [{"text": "耳穴贴压", "type": "中医治疗"}]}
+{"entities": [{"text": "枳术宽中胶囊", "type": "中医治疗"}]}
+{"entities": [{"text": "脂肝合剂", "type": "方剂"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "枳术宽中胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "多烯磷脂酰胆碱", "type": "西医治疗"}]}
+{"entities": [{"text": "高压氧", "type": "西医治疗"}, {"text": "围绝经期功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良伴厌食症", "type": "西医诊断"}, {"text": "推拿", "type": "中医治疗"}]}
+{"entities": [{"text": "益气开秘方", "type": "方剂"}]}
+{"entities": [{"text": "四神丸", "type": "方剂"}, {"text": "脾肾阳虚", "type": "中医证候"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "苔薄白", "type": "临床表现"}]}
+{"entities": [{"text": "食欲不振", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}, {"text": "湿热疫毒", "type": "中医证候"}]}
+{"entities": [{"text": "枯草杆菌二联活菌肠溶胶囊", "type": "西医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "烧心", "type": "临床表现"}, {"text": "反酸", "type": "临床表现"}, {"text": "反食", "type": "临床表现"}, {"text": "胸骨后灼痛", "type": "临床表现"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "萎缩性胃炎", "type": "西医诊断"}, {"text": "脾胃虚弱", "type": "中医证候"}, {"text": "柴胡疏肝散", "type": "方剂"}]}
+{"entities": [{"text": "阴黄", "type": "中医诊断"}]}
+{"entities": [{"text": "针刺疗法", "type": "中医治疗"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "茯苓", "type": "中药"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "肉桂", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝郁脾虚", "type": "中医证候"}, {"text": "四逆散加味", "type": "方剂"}]}
+{"entities": [{"text": "性急", "type": "临床表现"}, {"text": "心烦", "type": "临床表现"}]}
+{"entities": [{"text": "少腹逐瘀汤", "type": "方剂"}, {"text": "大黄", "type": "中药"}, {"text": "白芍", "type": "中药"}, {"text": "三七粉", "type": "中药"}]}
+{"entities": [{"text": "健脾疏肝", "type": "中医治则"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "葶苈子", "type": "中药"}]}
+{"entities": [{"text": "腹水", "type": "西医诊断"}, {"text": "苔薄微黄", "type": "临床表现"}, {"text": "脉弦", "type": "临床表现"}]}
+{"entities": [{"text": "四联疗法", "type": "其他治疗"}]}
+{"entities": [{"text": "小便增多", "type": "临床表现"}]}
+{"entities": [{"text": "多烯磷脂酰胆碱", "type": "西医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "雷贝拉唑胶囊", "type": "西医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "紫绀", "type": "临床表现"}]}
+{"entities": [{"text": "白芍", "type": "中药"}]}
+{"entities": [{"text": "建中振萎汤", "type": "方剂"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "恶寒", "type": "临床表现"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "头痛", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}, {"text": "尿黄", "type": "临床表现"}, {"text": "苔白厚", "type": "临床表现"}]}
+{"entities": [{"text": "参柴胃苏胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "四逆散加味", "type": "方剂"}, {"text": "肝郁脾虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "恶心欲吐", "type": "临床表现"}, {"text": "脘腹胀痞", "type": "临床表现"}]}
+{"entities": [{"text": "舒肝和胃饮", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "路优泰", "type": "西医治疗"}, {"text": "便秘", "type": "中医诊断"}]}
+{"entities": [{"text": "奥美拉唑和莫沙必利", "type": "西医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "苓桂术甘汤加味", "type": "方剂"}, {"text": "茯苓", "type": "中药"}, {"text": "桂枝", "type": "中药"}, {"text": "炙甘草", "type": "中药"}, {"text": "附子", "type": "中药"}, {"text": "竹茹", "type": "中药"}, {"text": "木通", "type": "中药"}, {"text": "茅根", "type": "中药"}, {"text": "姜皮", "type": "中药"}, {"text": "法半夏", "type": "中药"}]}
+{"entities": [{"text": "风湿性心脏病", "type": "西医诊断"}]}
+{"entities": [{"text": "疏肝通络", "type": "中医治则"}, {"text": "健脾利水", "type": "中医治则"}, {"text": "扶正", "type": "中医治则"}, {"text": "当归芍药散", "type": "方剂"}]}
+{"entities": [{"text": "阴黄", "type": "中医诊断"}, {"text": "脾虚兼有湿热", "type": "中医证候"}, {"text": "健脾兼清利湿热", "type": "中医治则"}]}
+{"entities": [{"text": "痰热内壅", "type": "中医证候"}, {"text": "清肺化痰", "type": "中医治则"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "温通针法", "type": "中医治疗"}]}
+{"entities": [{"text": "湿热蕴结", "type": "中医证候"}, {"text": "胎黄", "type": "中医诊断"}, {"text": "茵陈蒿汤加味", "type": "方剂"}, {"text": "茵陈", "type": "中药"}, {"text": "栀子", "type": "中药"}, {"text": "制大黄", "type": "中药"}, {"text": "赤芍", "type": "中药"}, {"text": "茯苓", "type": "中药"}, {"text": "桂枝", "type": "中药"}, {"text": "干姜", "type": "中药"}]}
+{"entities": [{"text": "大便稀薄", "type": "临床表现"}]}
+{"entities": [{"text": "灯芯草", "type": "中药"}, {"text": "丝瓜络", "type": "中药"}]}
+{"entities": [{"text": "自拟脂肝方", "type": "方剂"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "瘙痒", "type": "临床表现"}]}
+{"entities": [{"text": "防风", "type": "中药"}, {"text": "荆芥", "type": "中药"}, {"text": "麻黄", "type": "中药"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性功能性便秘", "type": "西医诊断"}, {"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "穴位贴敷", "type": "中医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "抑郁", "type": "临床表现"}, {"text": "焦虑", "type": "临床表现"}]}
+{"entities": [{"text": "调肝理脾通腑", "type": "中医治则"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "腰痛", "type": "临床表现"}]}
+{"entities": [{"text": "白术芪蓉汤", "type": "方剂"}, {"text": "脾肾两虚", "type": "中医证候"}, {"text": "老年功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "自拟胃宁煎剂", "type": "方剂"}, {"text": "黄芪", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "茯苓", "type": "中药"}, {"text": "香附", "type": "中药"}, {"text": "佛手", "type": "中药"}]}
+{"entities": [{"text": "柴胡桂枝汤加味", "type": "方剂"}, {"text": "柴胡", "type": "中药"}]}
+{"entities": [{"text": "川芎", "type": "中药"}, {"text": "半夏", "type": "中药"}, {"text": "黄芩", "type": "中药"}, {"text": "葛根", "type": "中药"}, {"text": "甘草", "type": "中药"}, {"text": "干姜", "type": "中药"}, {"text": "黄连", "type": "中药"}]}
+{"entities": [{"text": "温阳利水", "type": "中医治则"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "脾胃虚寒", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "埋线疗法", "type": "中医治疗"}]}
+{"entities": [{"text": "川楝", "type": "中药"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "厄贝沙坦", "type": "西医治疗"}, {"text": "二甲双胍", "type": "西医治疗"}]}
+{"entities": [{"text": "疏肝健脾和胃", "type": "中医治则"}, {"text": "归芍六君子汤", "type": "方剂"}, {"text": "当归", "type": "中药"}, {"text": "白芍", "type": "中药"}, {"text": "陈皮", "type": "中药"}, {"text": "半夏", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "茯苓", "type": "中药"}]}
+{"entities": [{"text": "电针", "type": "中医治疗"}, {"text": "自主神经功能", "type": "西医诊断"}, {"text": "心理状态", "type": "西医诊断"}]}
+{"entities": [{"text": "穴位埋线", "type": "中医治疗"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "盐酸依托必利", "type": "西医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "穴位埋线", "type": "中医治疗"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "白术", "type": "中药"}]}
+{"entities": [{"text": "麻痹性肠梗阻", "type": "西医诊断"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}]}
+{"entities": [{"text": "胃和汤", "type": "方剂"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "中医穴位按摩", "type": "中医治疗"}, {"text": "慢性功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "肝胆湿热", "type": "中医证候"}, {"text": "淤毒内阻", "type": "中医证候"}]}
+{"entities": [{"text": "推拿", "type": "中医治疗"}, {"text": "实", "type": "中医证候"}, {"text": "虚", "type": "中医证候"}]}
+{"entities": [{"text": "健脾理气方", "type": "方剂"}]}
+{"entities": [{"text": "肾孟肾炎", "type": "西医诊断"}, {"text": "血紫质病", "type": "西医诊断"}]}
+{"entities": [{"text": "曲美布汀", "type": "西医治疗"}]}
+{"entities": [{"text": "健脾益肾", "type": "中医治则"}, {"text": "利水消肿", "type": "中医治则"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "电针", "type": "中医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "穴位敷贴", "type": "中医治疗"}, {"text": "老年功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "补中益气汤加减", "type": "方剂"}, {"text": "穴位敷贴", "type": "中医治疗"}, {"text": "脾胃气虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "补肾健脾通便颗粒", "type": "中医治疗"}, {"text": "脾肾阳虚", "type": "中医证候"}, {"text": "慢性功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "耳穴埋豆", "type": "中医治疗"}, {"text": "老年高血压患者功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "穴位贴敷", "type": "中医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}, {"text": "脾胃湿热", "type": "中医证候"}]}
+{"entities": [{"text": "呕吐消失", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "黄疸", "type": "临床表现"}, {"text": "泄泻消失", "type": "临床表现"}, {"text": "纳增", "type": "临床表现"}, {"text": "肝区疼痛", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "面色暗黄", "type": "临床表现"}, {"text": "形寒怕冷", "type": "临床表现"}, {"text": "精神疲惫", "type": "临床表现"}, {"text": "口淡", "type": "临床表现"}, {"text": "纳呆", "type": "临床表现"}, {"text": "动则汗出心慌", "type": "临床表现"}, {"text": "夜寐不实", "type": "临床表现"}, {"text": "大便溏薄", "type": "临床表现"}, {"text": "小便黄赤", "type": "临床表现"}]}
+{"entities": [{"text": "冠心病", "type": "西医诊断"}]}
+{"entities": [{"text": "体倦", "type": "临床表现"}]}
+{"entities": [{"text": "大黄", "type": "中药"}]}
+{"entities": [{"text": "腹软", "type": "临床表现"}]}
+{"entities": [{"text": "痞满", "type": "中医诊断"}, {"text": "郁证", "type": "中医诊断"}, {"text": "胃脘痛", "type": "中医诊断"}]}
+{"entities": [{"text": "肝胃不合", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "舒肝和胃汤", "type": "方剂"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "化滞柔肝颗粒", "type": "中医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "乏力", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝胃不和", "type": "中医证候"}]}
+{"entities": [{"text": "便秘", "type": "中医诊断"}]}
+{"entities": [{"text": "活血益胃汤", "type": "方剂"}]}
+{"entities": [{"text": "苔薄黄", "type": "临床表现"}]}
+{"entities": [{"text": "健脾舒肝汤", "type": "方剂"}]}
+{"entities": [{"text": "白茅根", "type": "中药"}]}
+{"entities": [{"text": "吗丁啉", "type": "西医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "健脾消积颗粒", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "黄芪", "type": "中药"}, {"text": "防风", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "上腹痛", "type": "临床表现"}, {"text": "上腹胀", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "食欲不振", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}, {"text": "呕吐", "type": "临床表现"}]}
+{"entities": [{"text": "上腹不适", "type": "临床表现"}, {"text": "腹痛", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}, {"text": "呕吐", "type": "临床表现"}, {"text": "反酸", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "烧心", "type": "临床表现"}]}
+{"entities": [{"text": "疳脂平片", "type": "中医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "四联疗法", "type": "西医治疗"}]}
+{"entities": [{"text": "邪热内蕴", "type": "中医证候"}, {"text": "腑气不通", "type": "中医证候"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "四神丸", "type": "方剂"}]}
+{"entities": [{"text": "附子理中汤", "type": "方剂"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}, {"text": "脾肾阳虚", "type": "中医证候"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "身目发黄", "type": "临床表现"}, {"text": "心中烦闷", "type": "临床表现"}, {"text": "厌食泛恶", "type": "临床表现"}, {"text": "腹痛", "type": "临床表现"}, {"text": "腹泻", "type": "临床表现"}, {"text": "便若脓血", "type": "临床表现"}, {"text": "里急后重", "type": "临床表现"}, {"text": "肛门灼热", "type": "临床表现"}, {"text": "小便短少", "type": "临床表现"}, {"text": "苔黄腻", "type": "临床表现"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "复方甘草酸苷", "type": "中医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "上腹痛", "type": "临床表现"}, {"text": "上腹胀", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "食欲不振", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}, {"text": "呕吐", "type": "临床表现"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "香苏饮", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "舒肝和胃饮", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝胃不和", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "食滞", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "食滞", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝胃不和", "type": "中医证候"}]}
+{"entities": [{"text": "蜥蜴胃康基本方", "type": "方剂"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "气阴不足", "type": "中医证候"}, {"text": "毒瘀交阻", "type": "中医证候"}]}
+{"entities": [{"text": "炒白术", "type": "中药"}]}
+{"entities": [{"text": "加味逍遥散", "type": "方剂"}, {"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "肝脾气滞", "type": "中医证候"}]}
+{"entities": [{"text": "急性黄疸型肝炎", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}, {"text": "七方胃痛胶囊", "type": "中医治疗"}, {"text": "七方胃痛胶囊", "type": "中医治疗"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "脾胃虚寒", "type": "中医证候"}]}
+{"entities": [{"text": "恶心", "type": "临床表现"}]}
+{"entities": [{"text": "健胃合剂", "type": "中医治疗"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "枳术宽中胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "肠灵胶囊", "type": "中医治疗"}, {"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "电针治疗", "type": "中医治疗"}, {"text": "气虚", "type": "中医证候"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "消瘦", "type": "临床表现"}, {"text": "精神不振", "type": "临床表现"}]}
+{"entities": [{"text": "奥美拉唑和莫沙必利", "type": "西医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "黛力新", "type": "西医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "肝脾不和", "type": "中医证候"}]}
+{"entities": [{"text": "解毒扶正治萎方", "type": "方剂"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "腹部推拿", "type": "中医治疗"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "发热", "type": "中医诊断"}, {"text": "湿热疫毒侵入血分", "type": "中医证候"}]}
+{"entities": [{"text": "健脾疏肝降逆方", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "胃康乐胶囊Ⅱ号", "type": "中医治疗"}]}
+{"entities": [{"text": "循经点穴推拿", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "腹泻型功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "香砂六君子汤", "type": "方剂"}, {"text": "贴敷", "type": "中医治疗"}, {"text": "脾胃虚弱", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "苔黄", "type": "临床表现"}, {"text": "压痛", "type": "临床表现"}]}
+{"entities": [{"text": "脉象细数", "type": "临床表现"}]}
+{"entities": [{"text": "耳穴压豆", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "老年功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "埃索美拉唑", "type": "西医治疗"}, {"text": "胃食管反流病", "type": "西医诊断"}]}
+{"entities": [{"text": "苓桂术甘汤", "type": "方剂"}]}
+{"entities": [{"text": "肝硬化", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "枸橼酸莫沙必利片", "type": "西医治疗"}]}
+{"entities": [{"text": "腹痛", "type": "临床表现"}, {"text": "腹泻", "type": "临床表现"}, {"text": "黄连", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "精神好转", "type": "临床表现"}, {"text": "腹胀痛消失", "type": "临床表现"}, {"text": "黄疸变淡", "type": "临床表现"}, {"text": "小便淡黄", "type": "临床表现"}, {"text": "大便黄", "type": "临床表现"}, {"text": "矢气多", "type": "临床表现"}, {"text": "舌正红", "type": "临床表现"}, {"text": "瘀点减少", "type": "临床表现"}, {"text": "苔黄厚腻", "type": "临床表现"}, {"text": "脉弦", "type": "临床表现"}]}
+{"entities": [{"text": "腹胀", "type": "临床表现"}, {"text": "腹大如鼓", "type": "临床表现"}, {"text": "腹壁上青筋暴露", "type": "临床表现"}, {"text": "呼吸困难", "type": "临床表现"}, {"text": "尿少", "type": "临床表现"}, {"text": "尿黄", "type": "临床表现"}, {"text": "舌淡紫", "type": "临床表现"}, {"text": "苔滑腻", "type": "临床表现"}, {"text": "脉沉细涩", "type": "临床表现"}]}
+{"entities": [{"text": "郁金", "type": "中药"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "干姜", "type": "中药"}, {"text": "熟附片", "type": "中药"}, {"text": "茵陈", "type": "中药"}, {"text": "肉桂", "type": "中药"}, {"text": "甘草", "type": "中药"}]}
+{"entities": [{"text": "清热利湿", "type": "中医治则"}, {"text": "解毒活血汤", "type": "方剂"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "胆道死蛔残体酿生热毒", "type": "临床表现"}]}
+{"entities": [{"text": "水肿（阴水）", "type": "中医诊断"}, {"text": "脾肾两虚", "type": "中医证候"}]}
+{"entities": [{"text": "面色黑", "type": "临床表现"}, {"text": "声音嘶哑", "type": "临床表现"}, {"text": "舌红", "type": "临床表现"}, {"text": "苔薄白", "type": "临床表现"}, {"text": "肝硬化腹水", "type": "西医诊断"}, {"text": "气滞水阻兼肝阴不足之证", "type": "中医证候"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "乙型肝炎后肝硬化失代偿期", "type": "西医诊断"}]}
+{"entities": [{"text": "三仁汤", "type": "方剂"}, {"text": "脾胃湿热", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "乏力", "type": "临床表现"}, {"text": "纳差", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "眠差", "type": "临床表现"}, {"text": "二便尚调", "type": "临床表现"}]}
+{"entities": [{"text": "面容虚胖", "type": "临床表现"}, {"text": "面色苍白", "type": "临床表现"}, {"text": "巩膜轻度黄染", "type": "临床表现"}, {"text": "苔白", "type": "临床表现"}, {"text": "脉弦细", "type": "临床表现"}]}
+{"entities": [{"text": "老年功能性消化不良", "type": "西医诊断"}, {"text": "多潘立酮", "type": "西医治疗"}, {"text": "多潘立酮", "type": "西医治疗"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "柴胡疏肝散", "type": "方剂"}]}
+{"entities": [{"text": "穴位注射", "type": "中医治疗"}]}
+{"entities": [{"text": "枳壳", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "脾虚湿阻", "type": "中医证候"}, {"text": "脾阳虚", "type": "中医证候"}]}
+{"entities": [{"text": "糖脂消", "type": "中医治疗"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "温针灸", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "枳术丸", "type": "方剂"}]}
+{"entities": [{"text": "肠宁汤", "type": "方剂"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "异功散合二金汤加减", "type": "方剂"}]}
+{"entities": [{"text": "上腹疼痛", "type": "临床表现"}, {"text": "上腹饱胀", "type": "临床表现"}, {"text": "纳差", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}]}
+{"entities": [{"text": "疏肝和胃", "type": "中医治则"}]}
+{"entities": [{"text": "复方蜥蜴散不同微粒组合剂", "type": "方剂"}]}
+{"entities": [{"text": "附片", "type": "中药"}, {"text": "干姜", "type": "中药"}, {"text": "上肉桂", "type": "中药"}, {"text": "茯苓", "type": "中药"}]}
+{"entities": [{"text": "肝郁气滞", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "泽泻", "type": "中药"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}, {"text": "破血", "type": "中医治则"}, {"text": "通经", "type": "中医治则"}, {"text": "利水", "type": "中医治则"}, {"text": "清热", "type": "中医治则"}, {"text": "退黄", "type": "中医治则"}, {"text": "破血", "type": "中医治则"}, {"text": "通经", "type": "中医治则"}, {"text": "利水", "type": "中医治则"}]}
+{"entities": [{"text": "柴胡", "type": "中药"}]}
+{"entities": [{"text": "脾虚气滞", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "二参三草汤", "type": "方剂"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "脾虚气弱", "type": "中医证候"}]}
+{"entities": [{"text": "口苦", "type": "临床表现"}, {"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "慢性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "胃安胶囊", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "苔薄白", "type": "临床表现"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "红细胞增多症", "type": "西医诊断"}]}
+{"entities": [{"text": "肠宁汤", "type": "方剂"}]}
+{"entities": [{"text": "新下气汤", "type": "方剂"}]}
+{"entities": [{"text": "脾虚肝乘", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "板蓝根", "type": "中药"}, {"text": "连翘", "type": "中药"}, {"text": "甘草", "type": "中药"}]}
+{"entities": [{"text": "慢性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "气血瘀滞", "type": "中医证候"}]}
+{"entities": [{"text": "湿热", "type": "中医证候"}, {"text": "黄疸", "type": "中医诊断"}, {"text": "湿热", "type": "中医证候"}]}
+{"entities": [{"text": "冠心病", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性上腹疼痛", "type": "临床表现"}, {"text": "痞胀", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "泛酸", "type": "临床表现"}, {"text": "嘈杂", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}, {"text": "呕吐", "type": "临床表现"}]}
+{"entities": [{"text": "脉滑数", "type": "临床表现"}, {"text": "舌质淡", "type": "临床表现"}, {"text": "苔白灰（玉石状）", "type": "临床表现"}]}
+{"entities": [{"text": "皮肤干燥", "type": "临床表现"}, {"text": "目光炯炯", "type": "临床表现"}, {"text": "舌苔厚腻", "type": "临床表现"}]}
+{"entities": [{"text": "水肿", "type": "中医诊断"}, {"text": "气阴两虚", "type": "中医证候"}]}
+{"entities": [{"text": "瘀血", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "腹泻", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "匹维溴铵片", "type": "西医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "柴半汤", "type": "方剂"}, {"text": "体表穴位电刺激", "type": "中医治疗"}, {"text": "肝胃不和", "type": "中医证候"}, {"text": "非糜烂性反流", "type": "西医诊断"}]}
+{"entities": [{"text": "四联疗法", "type": "其他治疗"}]}
+{"entities": [{"text": "中药足浴", "type": "中医治疗"}, {"text": "辨证针刺", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "儿童功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "腹针", "type": "中医治疗"}]}
+{"entities": [{"text": "肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}, {"text": "疏肝降脂片", "type": "中医治疗"}, {"text": "郁金", "type": "中药"}, {"text": "首乌", "type": "中药"}, {"text": "绵茵陈", "type": "中药"}, {"text": "枳实", "type": "中药"}, {"text": "山楂", "type": "中药"}, {"text": "川朴", "type": "中药"}, {"text": "丹参", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "肝硬化腹水", "type": "西医诊断"}, {"text": "臌胀", "type": "中医诊断"}, {"text": "黄疸", "type": "中医诊断"}]}
+{"entities": [{"text": "腹胀", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "附子理中汤", "type": "方剂"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "疏肝行气", "type": "中医治则"}, {"text": "调神解郁", "type": "中医治则"}, {"text": "推拿", "type": "中医治疗"}, {"text": "腹泻", "type": "临床表现"}]}
+{"entities": [{"text": "寒热错杂", "type": "中医证候"}]}
+{"entities": [{"text": "湿热雍盛", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "西沙必利", "type": "西医治疗"}]}
+{"entities": [{"text": "腹水", "type": "临床表现"}]}
+{"entities": [{"text": "腹胀", "type": "临床表现"}, {"text": "纳差", "type": "临床表现"}, {"text": "乏力", "type": "临床表现"}]}
+{"entities": [{"text": "调肝理脾通腑", "type": "中医治则"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "加味二神汤", "type": "方剂"}, {"text": "补骨脂", "type": "中药"}, {"text": "肉豆蔻", "type": "中药"}, {"text": "防风", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "白术", "type": "中药"}]}
+{"entities": [{"text": "二甲双胍", "type": "西医治疗"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "附片", "type": "中药"}, {"text": "干姜", "type": "中药"}, {"text": "猪苓", "type": "中药"}, {"text": "茯苓", "type": "中药"}]}
+{"entities": [{"text": "高热", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "上腹部疼痛", "type": "临床表现"}, {"text": "腹部胀气", "type": "临床表现"}, {"text": "嗳气", "type": "临床表现"}, {"text": "早饱", "type": "临床表现"}, {"text": "恶心", "type": "临床表现"}]}
+{"entities": [{"text": "脾胃虚弱", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "浮肿", "type": "临床表现"}, {"text": "卧床不起", "type": "临床表现"}, {"text": "失眠", "type": "临床表现"}, {"text": "心悸", "type": "临床表现"}, {"text": "唇淡", "type": "临床表现"}]}
+{"entities": [{"text": "肝胃不和", "type": "中医证候"}]}
+{"entities": [{"text": "盐制车前子", "type": "中药"}, {"text": "清炒车前子", "type": "中药"}, {"text": "车前子生粉", "type": "中药"}]}
+{"entities": [{"text": "胃萎康合剂", "type": "中医治疗"}]}
+{"entities": [{"text": "肝脾不和", "type": "中医证候"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "乌灵胶囊", "type": "中医治疗"}, {"text": "培菲康", "type": "西医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "四磨汤", "type": "方剂"}]}
+{"entities": [{"text": "防己汤", "type": "方剂"}, {"text": "苍术", "type": "中药"}, {"text": "白术", "type": "中药"}, {"text": "汉防己", "type": "中药"}, {"text": "怀牛膝", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "黄芪", "type": "中药"}]}
+{"entities": [{"text": "舌暗红", "type": "临床表现"}, {"text": "苔薄白", "type": "临床表现"}, {"text": "脉滑数", "type": "临床表现"}]}
+{"entities": [{"text": "蛔厥", "type": "中医诊断"}]}
+{"entities": [{"text": "清热利湿", "type": "中医治则"}, {"text": "疏肝健脾", "type": "中医治则"}, {"text": "解毒活血汤", "type": "方剂"}, {"text": "茵陈", "type": "中药"}, {"text": "大黄", "type": "中药"}, {"text": "山栀", "type": "中药"}, {"text": "虎杖", "type": "中药"}, {"text": "板蓝根", "type": "中药"}, {"text": "连翘", "type": "中药"}, {"text": "郁金", "type": "中药"}, {"text": "柴胡", "type": "中药"}, {"text": "当归", "type": "中药"}, {"text": "赤白芍", "type": "中药"}, {"text": "丹参", "type": "中药"}, {"text": "红花", "type": "中药"}, {"text": "枳壳", "type": "中药"}, {"text": "茯苓", "type": "中药"}, {"text": "甘草", "type": "中药"}]}
+{"entities": [{"text": "便秘", "type": "中医诊断"}, {"text": "腹痛", "type": "临床表现"}]}
+{"entities": [{"text": "拔罐", "type": "中医治疗"}, {"text": "胃食管反流性咳嗽", "type": "西医诊断"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}]}
+{"entities": [{"text": "神阙隔物灸", "type": "中医治疗"}, {"text": "针刺", "type": "中医治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "浮肿", "type": "临床表现"}, {"text": "心烦", "type": "临床表现"}, {"text": "口苦", "type": "临床表现"}, {"text": "口渴", "type": "临床表现"}, {"text": "不欲饮", "type": "临床表现"}, {"text": "小便黄赤", "type": "临床表现"}, {"text": "苔黄腻", "type": "临床表现"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}, {"text": "脾胃病", "type": "西医诊断"}]}
+{"entities": [{"text": "肝经湿热蕴结", "type": "中医证候"}]}
+{"entities": [{"text": "电针", "type": "中医治疗"}, {"text": "健脾祛湿方", "type": "方剂"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "中医食疗", "type": "中医治疗"}]}
+{"entities": [{"text": "黄连素", "type": "西医治疗"}]}
+{"entities": [{"text": "辨证针刺", "type": "中医治疗"}]}
+{"entities": [{"text": "便秘", "type": "中医诊断"}]}
+{"entities": [{"text": "疏肝健脾", "type": "中医治则"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "舌苔白厚腻", "type": "临床表现"}, {"text": "脉沉伏", "type": "临床表现"}]}
+{"entities": [{"text": "水样便", "type": "临床表现"}]}
+{"entities": [{"text": "功能性便秘", "type": "西医诊断"}, {"text": "气阴两虚", "type": "中医证候"}, {"text": "气短乏力", "type": "临床表现"}, {"text": "心悸", "type": "临床表现"}, {"text": "口干", "type": "临床表现"}, {"text": "排便无力", "type": "临床表现"}, {"text": "补气滋阴通腑汤", "type": "方剂"}]}
+{"entities": [{"text": "面色晦暗", "type": "临床表现"}, {"text": "形体消瘦", "type": "临床表现"}, {"text": "腹大如瓮，鼓之如鼓", "type": "临床表现"}, {"text": "腹壁青筋怒张", "type": "临床表现"}, {"text": "双下肢轻度浮肿", "type": "临床表现"}, {"text": "舌质暗", "type": "临床表现"}, {"text": "苔白腻", "type": "临床表现"}, {"text": "脉弦滑", "type": "临床表现"}]}
+{"entities": [{"text": "脾虚食滞", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "咳喘不得卧", "type": "临床表现"}, {"text": "吐大量白色粘痰", "type": "临床表现"}, {"text": "心慌不安", "type": "临床表现"}, {"text": "小便不利", "type": "临床表现"}, {"text": "下肢浮肿", "type": "临床表现"}]}
+{"entities": [{"text": "胃复春片", "type": "中医治疗"}, {"text": "伴异型增生慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "湿热内蕴", "type": "中医证候"}]}
+{"entities": [{"text": "血瘀", "type": "中医证候"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}, {"text": "山栀", "type": "中药"}]}
+{"entities": [{"text": "大白散", "type": "方剂"}]}
+{"entities": [{"text": "乏力", "type": "临床表现"}, {"text": "黄疸", "type": "中医诊断"}, {"text": "头晕", "type": "临床表现"}, {"text": "便溏", "type": "临床表现"}, {"text": "双下肢酸痛轻度水肿", "type": "临床表现"}, {"text": "苔少", "type": "临床表现"}, {"text": "脉沉弦", "type": "临床表现"}]}
+{"entities": [{"text": "肝郁脾虚", "type": "中医证候"}]}
+{"entities": [{"text": "逍遥散", "type": "方剂"}, {"text": "便秘型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "针刺", "type": "中医治疗"}, {"text": "耳压", "type": "中医治疗"}]}
+{"entities": [{"text": "面色苍白", "type": "临床表现"}, {"text": "少气懒言", "type": "临床表现"}, {"text": "贫血貌", "type": "临床表现"}]}
+{"entities": [{"text": "面色少泽", "type": "临床表现"}, {"text": "白睛轻度黄染", "type": "临床表现"}, {"text": "苔白厚腻", "type": "临床表现"}]}
+{"entities": [{"text": "耳穴贴压", "type": "中医治疗"}]}
+{"entities": [{"text": "心悸", "type": "中医诊断"}, {"text": "瘀阻心脉", "type": "中医证候"}]}
+{"entities": [{"text": "麻仁软胶囊", "type": "中医治疗"}, {"text": "热积证功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "茵陈", "type": "中药"}, {"text": "黄芩", "type": "中药"}, {"text": "枳壳", "type": "中药"}, {"text": "姜黄", "type": "中药"}, {"text": "大黄", "type": "中药"}, {"text": "茯苓", "type": "中药"}, {"text": "茅根", "type": "中药"}, {"text": "椒目", "type": "中药"}]}
+{"entities": [{"text": "银花", "type": "中药"}, {"text": "芦根", "type": "中药"}, {"text": "生地", "type": "中药"}]}
+{"entities": [{"text": "四逆散", "type": "方剂"}, {"text": "肝胃郁热", "type": "中医证候"}]}
+{"entities": [{"text": "食疗", "type": "其他治疗"}]}
+{"entities": [{"text": "吗丁啉", "type": "西医治疗"}, {"text": "小儿功能性消化不良", "type": "西医诊断"}, {"text": "吗丁啉", "type": "西医治疗"}]}
+{"entities": [{"text": "指针", "type": "中医治疗"}, {"text": "竹药罐", "type": "中医治疗"}, {"text": "脾胃虚弱", "type": "中医证候"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "发热", "type": "临床表现"}, {"text": "畏寒", "type": "临床表现"}, {"text": "寒战", "type": "临床表现"}, {"text": "消瘦", "type": "临床表现"}, {"text": "苔薄黄", "type": "临床表现"}]}
+{"entities": [{"text": "枸杞", "type": "中药"}]}
+{"entities": [{"text": "脾阳虚", "type": "中医证候"}]}
+{"entities": [{"text": "大腹胀", "type": "临床表现"}, {"text": "齿衄", "type": "临床表现"}]}
+{"entities": [{"text": "郁金", "type": "中药"}, {"text": "枳壳", "type": "中药"}, {"text": "川木香", "type": "中药"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "利湿", "type": "中医治则"}, {"text": "清热解毒", "type": "中医治则"}, {"text": "退黄", "type": "中医治则"}]}
+{"entities": [{"text": "耳穴贴压", "type": "中医治疗"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "气阴两虚", "type": "中医证候"}, {"text": "芪榔方", "type": "方剂"}]}
+{"entities": [{"text": "温针灸", "type": "中医治疗"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "脘腹胀满", "type": "临床表现"}, {"text": "胃脘隐痛", "type": "临床表现"}, {"text": "纳差食少", "type": "临床表现"}, {"text": "嗳气呃逆", "type": "临床表现"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性非萎缩性胃炎", "type": "西医诊断"}]}
+{"entities": [{"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "炒苍术", "type": "中药"}, {"text": "白术", "type": "中药"}]}
+{"entities": [{"text": "肝郁气滞", "type": "中医证候"}]}
+{"entities": [{"text": "疏肝健脾", "type": "中医治则"}, {"text": "非酒精性脂肪肝", "type": "西医诊断"}]}
+{"entities": [{"text": "痛泻要方加味", "type": "方剂"}, {"text": "心理疗法", "type": "其他治疗"}, {"text": "腹泻型肠易激综合征", "type": "西医诊断"}]}
+{"entities": [{"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "气阴不足", "type": "中医证候"}]}
+{"entities": [{"text": "麻枳降浊方", "type": "方剂"}]}
+{"entities": [{"text": "心悸", "type": "临床表现"}]}
+{"entities": [{"text": "乏力", "type": "临床表现"}, {"text": "肝硬化腹水", "type": "西医诊断"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}, {"text": "四磨汤", "type": "方剂"}, {"text": "肝脾不和", "type": "中医证候"}]}
+{"entities": [{"text": "香砂六君子汤加味", "type": "方剂"}, {"text": "木香", "type": "中药"}, {"text": "九香虫", "type": "中药"}, {"text": "砂仁", "type": "中药"}, {"text": "党参", "type": "中药"}, {"text": "炒白术", "type": "中药"}, {"text": "姜半夏", "type": "中药"}, {"text": "陈皮", "type": "中药"}]}
+{"entities": [{"text": "脾胃虚寒", "type": "中医证候"}]}
+{"entities": [{"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "中虚外寒侵袭", "type": "中医证候"}]}
+{"entities": [{"text": "柴胡疏肝散", "type": "方剂"}, {"text": "萎缩性胃炎", "type": "西医诊断"}, {"text": "脾胃虚弱", "type": "中医证候"}]}
+{"entities": [{"text": "双歧三联活菌", "type": "西医治疗"}, {"text": "成人功能性便秘", "type": "西医诊断"}]}
+{"entities": [{"text": "腹水", "type": "西医诊断"}]}
+{"entities": [{"text": "善胃Ⅰ号方", "type": "方剂"}, {"text": "血瘀热毒", "type": "中医证候"}, {"text": "胃癌前病变", "type": "西医诊断"}]}
+{"entities": [{"text": "脾胃虚寒", "type": "中医证候"}, {"text": "肝郁气滞", "type": "中医证候"}, {"text": "脾胃湿热", "type": "中医证候"}, {"text": "寒热错杂", "type": "中医证候"}]}
+{"entities": [{"text": "寒热错杂", "type": "中医证候"}, {"text": "慢性萎缩性胃炎", "type": "西医诊断"}, {"text": "半夏泻心汤加味", "type": "方剂"}]}
+{"entities": [{"text": "柴平舒胃汤加减", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "柴胡疏肝散", "type": "方剂"}, {"text": "功能性消化不良", "type": "西医诊断"}]}
+{"entities": [{"text": "心肺阴性", "type": "临床表现"}, {"text": "腹胀", "type": "临床表现"}, {"text": "舌质红", "type": "临床表现"}, {"text": "苔薄黄", "type": "临床表现"}, {"text": "脉弦数有力", "type": "临床表现"}]}
