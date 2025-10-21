@@ -120,6 +120,7 @@ def format_evaluation_results(metrics):
         r = scores['r'] * 100
         f1 = scores['f1'] * 100
         print(f"{entity_type:<12} {p:>8.2f}% {r:>8.2f}% {f1:>8.2f}%")
+
     
     # 总体指标
     print("\n📈 总体评估指标:")
