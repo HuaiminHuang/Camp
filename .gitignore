@@ -12,7 +12,7 @@ extract-dialogue-master/
 .ipynb_checkpoints/
 
 # 数据文件
-*.jsonl
+*.json
 *.csv
 *.h5
 *.npy
