@@ -1,6 +1,8 @@
 import json
+import numpy as np
 
 def convert_to_sft_format(Data):
+    """数据转化为SFT格式"""
     sft_data = []
     for idx, sample in Data.items():
         sentence = sample["sentence"]
@@ -22,7 +24,10 @@ def convert_to_sft_format(Data):
     return sft_data
 
 def compute_f1(predictions, references, match_mode="soft"):
-    assert len(predictions) == len(references)
+    """
+    计算f1
+    """
+    assert len(predictions) == len(references) # 首先保证计算长度一致
 
     entity_counter = {}
     all_types = set()
@@ -35,7 +40,8 @@ def compute_f1(predictions, references, match_mode="soft"):
         except Exception:
             return {"entities": []}
 
-    def overlap(e1, e2, mode="lenient"):
+    def overlap(e1, e2, mode="soft"):
+        """重叠部分的计算严格/宽松mode"""
         if e1["type"] != e2["type"]:
             return False
         if mode == "strict":
@@ -98,6 +104,35 @@ def compute_f1(predictions, references, match_mode="soft"):
 
     return results
 
+def filter_invalid_entities(preds, categories):
+    """
+    过滤数据中无效实体
+    """
+    import json
+    
+    def load_json_safe(x):
+        if isinstance(x, dict):
+            return x
+        try:
+            return json.loads(x)
+        except Exception:
+            return {"entities": []}
+    
+    filtered_data = []
+    for data in preds:
+        data_json = load_json_safe(data)
+        entities = data_json.get("entities", [])
+        
+        # 过滤有效实体
+        valid_entities = [
+            entity for entity in entities if entity.get("type") in categories
+        ]
+        
+        # 重新构建数据
+        filtered_json = {"entities": valid_entities}
+        filtered_data.append(json.dumps(filtered_json, ensure_ascii=False))
+    
+    return filtered_data
 
 def format_evaluation_results(metrics):
     """
@@ -160,7 +195,6 @@ def format_evaluation_results(metrics):
     print("=" * 80)
 
     import torch
-import numpy as np
 
 def compute_metrics(eval_preds, tokenizer):
     preds, labels = eval_preds
