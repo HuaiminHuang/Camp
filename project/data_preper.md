@@ -112,7 +112,9 @@ GENERALIZE_PROMPT_TPL = """
 3. 每个问题以序号+回车分隔输出。
 """
 ```
-如果生成质量还不够和可以对低质量数据进行统一的过滤，也可以同样的使用llm进行整个过程。
+> >note:   
+>如果生成质量还不够和可以对低质量数据进行统一的过滤，也可以同样的使用llm进行整个过程。
+
 ---
 
 输入：怎么打开车窗  
@@ -177,7 +179,7 @@ flowchart TD
 
 ---
 
-# SFT 训练数据集的生成
+# 3. 训练数据集的生成
 <center>
 
 ```mermaid
@@ -202,8 +204,8 @@ graph TD
 
 
 ### ReRanker Data
-Reranker 的目标：
-
+### Reranker 
+目标：
 - 给定 query 与一组候选文档，判断每个文档与 query 的相关性（打分/排序）。
 
 因此我们需要构建：
@@ -234,4 +236,19 @@ middle = random.choice(info["context"][-2:])
 else:
     negative = random.choice(info["merged_docs"])
     ...
+```
+
+### SFT
+
+数据的正负样本的构造基本reranker基本一致
+
+每一个 item 如下调整为SFT训练的格式：
+```py
+    item = {
+        "query": query,
+        "context": context,
+        "instruction": instruction,
+        "input": "",
+        "output": format_answer
+    }
 ```
