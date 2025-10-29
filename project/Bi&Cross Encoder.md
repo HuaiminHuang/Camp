@@ -122,7 +122,9 @@ $$\mathcal{L} = \text{BCE}(s, y)$$
 ### 🎯 优化目标：
 
 学习一个语义空间，使得：
+
 $$\text{sim}(q, d^+) > \text{sim}(q, d^-)$$
+
 即：正样本距离更近，负样本更远。
 
 ---
@@ -130,6 +132,7 @@ $$\text{sim}(q, d^+) > \text{sim}(q, d^-)$$
 ### 1️⃣ **InfoNCE Loss（最常用）**
 
 **公式：**
+
 $$\mathcal{L} = -\log \frac{e^{\text{sim}(q, d^+)/\tau}}{e^{\text{sim}(q, d^+)/\tau} + \sum_{d^-} e^{\text{sim}(q, d^-)/\tau}}$$
 
 **含义：**
@@ -152,11 +155,15 @@ $$\mathcal{L} = -\log \frac{e^{\text{sim}(q, d^+)/\tau}}{e^{\text{sim}(q, d^+)/\
 ### 2️⃣ **Triplet Loss（三元组损失）**
 
 **公式：**
+
 $$\mathcal{L} = \max(0, m + \text{sim}(q, d^-) - \text{sim}(q, d^+))$$
+
 其中 ( m ) 是 margin。
 **直观理解：**
 要求：
+
 $$\text{sim}(q, d^+) ≥ \text{sim}(q, d^-) + m$$
+
 若不满足，就会产生梯度推动调整。
 
 **应用：**
@@ -169,7 +176,9 @@ $$\text{sim}(q, d^+) ≥ \text{sim}(q, d^-) + m$$
 ### 3️⃣ **Multiple Negatives Ranking Loss**
 
 **公式：**
+
 $$\mathcal{L} = -\frac{1}{N}\sum_i \log \frac{e^{\text{sim}(q_i, d_i)}}{\sum_j e^{\text{sim}(q_i, d_j)}}$$
+
 **含义：**
 在一个 batch 内，把其他样本视为负样本，提升训练效率。
 
@@ -214,8 +223,9 @@ $$s(q, d^+) > s(q, d^-)$$
 用于二分类：文档是否相关。
 
 **公式：**
+
 $$\mathcal{L} = -[y \log \sigma(s) + (1-y)\log (1-\sigma(s))]$$
-其中 ( $s = f(q,d) )，( y \in {0,1} $)。
+其中 $s = f(q,d) ， y \in (0,1) $。
 
 **应用：**
 
@@ -251,9 +261,9 @@ $$\mathcal{L} = \max(0, m - s(q,d^+) + s(q,d^-))$$
 $$\mathcal{L} = -\sum_i P_i \log Q_i$$
 其中：
 
-* ( $P_i$ )：真实排序分布；
-* ( $Q_i = \frac{e^{s_i}}{\sum_j e^{s_j}}$ )：预测排序分布。
-
+* $P_i$ ：真实排序分布；
+* $Q_i = \frac{e^{s_i}}{\sum_j e^{s_j}}$ ：预测排序分布。
+ 
 本质是把整个候选列表的排序概率对齐。
 
 **应用：**

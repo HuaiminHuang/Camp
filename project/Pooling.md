@@ -125,15 +125,115 @@ embeddings = F.normalize(embeddings, p=2, dim=1)
 * L2 归一化让向量适配 cosine 相似度。
 
 ---
-# 📘 总结
 
-| Pooling 类型        | 优点        | 缺点         | 是否主流   |
-| ----------------- | --------- | ---------- | ------ |
-| [CLS]             | 快速        | 依赖预训练，语义弱  | ❌      |
-| **Mean Pooling**  | 平滑、稳定、泛化强 | 忽略token重要性 | ✅✅✅    |
-| Max Pooling       | 强调激活特征    | 稀疏、不稳定     | 🚫     |
-| Attention Pooling | 自适应权重     | 参数多、计算重    | ⬆️ 新趋势 |
+# 四、[CLS] Pooling 的原理与动机
 
-**👉 因此：Qwen3、BGE、E5 等 embedding 模型几乎都使用 Mean Pooling 是有理论与实证支撑的。**
+### 1️⃣ [CLS] 是什么？
+
+在 BERT 架构中，输入的第一个 token 是一个特殊标记 `[CLS]`（classification token）。
+BERT 在预训练阶段（尤其是 NSP 任务中）被显式地教导去让 `[CLS]` 向量代表整个句子的语义摘要。
+
+输入序列示例：
+
+```
+[CLS] The weather is nice today. [SEP]
+```
+
+Transformer 的输出：
+
+```
+H = [h_CLS, h_1, h_2, h_3, ..., h_SEP]
+```
+
+### 2️⃣ Pooling 过程
+
+**[CLS] pooling** 就是直接取输出矩阵中第一个向量：
+[
+z = h_{\text{CLS}}
+]
+
+这个向量已经在预训练任务中被优化为“全局语义代表”，
+因此可以直接用于分类或句子表示任务。
+
+### 3️⃣ 特性
+
+| 特征          | 说明                                                                      |
+| :---------- | :---------------------------------------------------------------------- |
+| **可学习**     | `[CLS]` 的语义是通过预训练任务学出来的，而非简单数学平均                                        |
+| **全局上下文融合** | 每一层 Transformer 的 self-attention 都允许 `[CLS]` attend 所有 token，因此它能综合整句信息 |
+| **信息流方向**   | 信息不断聚合到 `[CLS]` 这个 token 上（它像一个“语义收集器”）                                 |
 
 ---
+
+### 🧮 、数学角度理解信息流
+
+设输入为：
+
+$$X = [x_{\text{CLS}}, x_1, x_2, ..., x_L]$$
+
+经过 Transformer 层：
+
+$$H^{(l)} = \text{MHA}(H^{(l-1)}) + \text{FFN}(H^{(l-1)})$$
+
+在每一层中：
+
+$$h_{\text{CLS}}^{(l)} = \sum_{i=1}^L \alpha_{\text{CLS},i}^{(l)} W_V h_i^{(l-1)}$$
+
+
+可以看到：
+
+* `[CLS]` 向量通过注意力权重 ( \alpha_{\text{CLS},i} ) 聚合了整个序列的信息；
+* 每一层都增强 `[CLS]` 的全局感知能力；
+* 最终层的 `[CLS]` 就成了整个输入的语义中心。
+
+于是我们只需：
+
+$$s(q,d) = w^T h_{\text{CLS}}^{(L)} + b$$
+
+即可作为最终的打分结果。
+
+---
+
+### 🧩从任务需求角度看 [CLS] Pooling 的合理性
+
+| 特征                     | 说明                                        |
+| :--------------------- | :---------------------------------------- |
+| **输入是 Query–Doc pair** | 需要一个联合表示，而非独立句向量                          |
+| **输出是单一得分**            | 不需要多维 embedding，只需 scalar                 |
+| **模型已预训练 [CLS] 表征语义**  | BERT/RoBERTa 的预训练目标正好契合                   |
+| **全交互 Attention**      | `[CLS]` 可以收集所有交互信息                        |
+| **对齐 ranking 任务结构**    | Pairwise / Listwise Loss 直接作用于 `[CLS]` 输出 |
+
+因此在架构与目标函数的契合度上，`[CLS]` pooling 几乎是“天然匹配”的方案。
+
+---
+
+### 🧠CLS 在实际 Reranker 中的体现
+
+| 模型                             | Pooling                   | 输出层           | 损失函数                |
+| :----------------------------- | :------------------------ | :------------ | :------------------ |
+| **MonoBERT**                   | [CLS]                     | Linear(768→1) | BCE                 |
+| **MonoT5**                     | Encoder [CLS] 输出到 Decoder | Cross-Entropy |                     |
+| **Qwen-Reranker**              | [CLS]                     | Linear        | Pairwise / Listwise |
+| **RankGPT / DeBERTa-Reranker** | [CLS]                     | Linear / MLP  | Pairwise Ranking    |
+| **RocketQA Cross-Encoder**     | [CLS]                     | Linear        | Margin Ranking Loss |
+
+这些模型都遵循相同范式：
+
+> `[CLS] → Linear → Score → Loss`
+
+---
+
+## ✅ 总结一句话
+
+> Reranker 使用 `[CLS]` pooling 的根本原因是：
+>
+> * 输入是「Query+Document」联合序列；
+> * `[CLS]` 在每层 attention 中都聚合了全局交互语义；
+> * 任务目标是输出一个相关性分数；
+> * 预训练阶段模型已学会将 `[CLS]` 作为全局语义汇聚向量。
+
+换言之：
+
+> **[CLS] pooling 是一种“任务感知的、可学习的全局语义聚合机制”，**
+> 它让 Reranker 能直接把复杂的 query–doc 交互浓缩成一个打分表示。
