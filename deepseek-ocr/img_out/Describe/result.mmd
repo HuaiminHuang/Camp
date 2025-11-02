@@ -1,0 +1,43 @@
+The figure consists of two parts: (a) Compression on the Fox benchmark and (b) Performance on Omnidocbench.
+
+### Part (a): Compression on Fox Benchmark
+
+This part of the figure shows the compression ratio achieved by the proposed method for various text token sizes. The compression ratio is represented by the height of the bars, with each bar corresponding to a specific text token size. The bars are color-coded to indicate different compression ratios:
+
+- **64 bits tokens (left)**: Represented by the lightest shade of purple.
+- **100 bits tokens (middle)**: Represented by a slightly darker shade of purple.
+- **64 bits tokens (right)**: Represented by a medium shade of purple.
+- **100 bits tokens (right)**: Represented by the darkest shade of purple.
+
+The x-axis represents the text tokens in per page (Ground-truth), ranging from 600 to 1200. The y-axis represents the precision percentage, ranging from 0% to 100%. Each bar shows the precision achieved at different token sizes.
+
+Key observations:
+- The precision generally increases with the token size.
+- The 64 bits tokens (left) show the highest precision across all token sizes.
+- The 100 bits tokens (middle) show a moderate precision, with a noticeable drop as the token size increases.
+- The 64 bits tokens (right) show the lowest precision, with a significant drop as the token size increases.
+
+### Part (b): Performance on Omnidocbench
+
+This part of the figure compares the performance of different models on the Omnidocbench benchmark. The models are represented by different shapes and colors:
+
+- **DeepSeek-OCR (Gundam-M 200dpi)**: Represented by a green circle.
+- **DeepSeek-OCR (Large)**: Represented by a blue circle.
+- **DeepSeek-OCR (Small)**: Represented by a yellow circle.
+- **DeepSeek-OCR (Tiny)**: Represented by a pink circle.
+- **DeepSeek-OCR (OLMOCR)**: Represented by a light blue circle.
+- **DeepSeek-OCR (GotOCR2.0)**: Represented by a dark blue circle.
+- **DeepSeek-OCR (Small)**: Represented by a light green circle.
+- **DeepSeek-OCR (Tiny)**: Represented by a dark green circle.
+- **DeepSeek-OCR (Tiny)**: Represented by a light orange circle.
+
+The x-axis represents the average vision tokens per image, ranging from 0 to 1000. The y-axis represents the overall performance percentage, ranging from 0% to 1%.
+
+Key observations:
+- The performance generally increases with the number of vision tokens per image.
+- The DeepSeek-OCR (Tiny) model shows the highest performance across all token sizes.
+- The DeepSeek-OCR (Tiny) model also shows the highest overall performance, indicating its superior performance compared to other models.
+
+### Summary
+
+The figure demonstrates the effectiveness of the proposed compression method on the Fox benchmark and its superior performance on the Omnidocbench benchmark. The compression ratio analysis shows that smaller token sizes generally yield higher precision, and the performance comparison highlights the efficiency of the DeepSeek-OCR (Tiny) model in both compression and performance metrics.
