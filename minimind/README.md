@@ -377,7 +377,24 @@ GRPO 方法让模型具备了在线探索和自我优化的能力，理论上有
   - `ceval-valid` 的总分 `acc: 0.2556` 表明模型在多项选择题上的平均正确率约为 25.6%。
   - `README.md` 中也提到，对于这个量级的模型，得分在 25%（即随机猜测的概率）附近是正常现象，表明模型在处理复杂的、需要精确知识的选择题方面能力有限。
 
-  测试结果`benchmark`
+  测试结果`benchmark`:
+  hf (pretrained=./MiniMind2R1,device=cuda,dtype=auto,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 16
+  |                       Tasks                        |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+  |----------------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+  |ceval-valid                                         |      2|none  |      |acc     |↑  |0.2556|±  |0.0119|
+  |                                                    |       |none  |      |acc_norm|↑  |0.2556|±  |0.0119|
+  |ceval-valid_accountant                              |      2|none  |     0|acc     |↑  |0.3469|±  |0.0687|
+  |                                                    |       |none  |     0|acc_norm|↑  |0.3469|±  |0.0687|
+  |ceval-valid_advanced_mathematics                    |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
+  |                                                    |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
+  |ceval-valid_art_studies                             |      2|none  |     0|acc     |↑  |0.1818|±  |0.0682|
+  |                                                    |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0682|
+  |ceval-valid_basic_medicine                          |      2|none  |     0|acc     |↑  |0.1053|±  |0.0723|
+  |                                                    |       |none  |     0|acc_norm|↑  |0.1053|±  |0.0723|
+  |ceval-valid_business_administration                 |      2|none  |     0|acc     |↑  |0.4242|±  |0.0874|
+  |                                                    |       |none  |     0|acc_norm|↑  |0.4242|±  |0.0874|
+  ......
+  
   |  Groups   |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
   |-----------|------:|------|------|--------|---|-----:|---|-----:|
   |ceval-valid|      2|none  |      |acc     |↑  |0.2556|±  |0.0119|
