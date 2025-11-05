@@ -1,0 +1,143 @@
+(base) root@autodl-container-d45f429eca-d756ddcc:~/autodl-tmp/minimind-master/trainer# python train_pretrain.py --hidden_size 768 --num_hidden_layers 16 --use_wandb --epochs 1 --ba
+tch_size 32 --accumulation_steps 4 --num_workers 8 --dtype bfloat16 --learning_rate 5e-4 --grad_clip 1.0 --max_seq_len 512
+/root/miniconda3/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+swanlab: swanlab version 0.6.13 is available!  Upgrade: `pip install -U swanlab`
+swanlab: Tracking run with swanlab version 0.6.8
+swanlab: Run data will be saved locally in /root/autodl-tmp/minimind-master/trainer/swanlog/run-20251103_175833-4wxebrua0jw9n1b908ta8
+swanlab: 👋 Hi HuaiminHuang,welcome to swanlab!
+swanlab: Syncing run MiniMind-Pretrain-Epoch-1-BatchSize-32-LearningRate-0.0005 to the cloud
+swanlab: 🏠 View project at https://swanlab.cn/@HuaiminHuang/MiniMind-Pretrain
+swanlab: 🚀 View run at https://swanlab.cn/@HuaiminHuang/MiniMind-Pretrain/runs/4wxebrua0jw9n1b908ta8
+所加载Model可训练参数：104.031 百万
+Epoch:[1/1](100/44160) loss:7.066367 lr:0.000549993674 epoch_Time:156.0min:
+Epoch:[1/1](200/44160) loss:6.666476 lr:0.000549974695 epoch_Time:159.0min:
+Epoch:[1/1](300/44160) loss:6.207613 lr:0.000549943065 epoch_Time:159.0min:
+Epoch:[1/1](400/44160) loss:5.868275 lr:0.000549898786 epoch_Time:160.0min:
+......
+Epoch:[1/1](44000/44160) loss:1.976667 lr:0.000050016195 epoch_Time:1.0min:
+Epoch:[1/1](44100/44160) loss:1.911794 lr:0.000050002277 epoch_Time:0.0min:
+Epoch:[1/1](44159/44160) loss:1.939027 lr:0.000050000001 epoch_Time:0.0min:
+swanlab: Experiment MiniMind-Pretrain-Epoch-1-BatchSize-32-LearningRate-0.0005 has completed
+swanlab: 🏠 View project at https://swanlab.cn/@HuaiminHuang/MiniMind-Pretrain
+swanlab: 🚀 View run at https://swanlab.cn/@HuaiminHuang/MiniMind-Pretrain/runs/4wxebrua0jw9n1b908ta8
+
+
+============================================================================================
+python eval_llm.py --weight pretrain --hidden_size 768 --num_hidden_layers 16 --repetition_penalty 1.1
+/root/miniconda3/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not instal
+l pynvml directly, please report this to the maintainers of the package that installed pynvml for you.                                                                                import pynvml  # type: ignore[import]
+MiniMind模型参数: 104.03 M(illion)
+[0] 自动测试
+[1] 手动输入
+0
+👶: 你有什么特长？
+🤖️: 我是计算机程序，没有个人特点和技能。但是我可以提供一些关于编程的建议和资源，以便您做出更明智的决策。
+
+
+
+👶: 为什么天空是蓝色的
+🤖️: ？天空呈现出蓝色是因为大气散射后，蓝光波长短，散射较少，所以天空变成了橙红色或红色。
+
+
+
+👶: 请用Python写一个计算斐波那契数列的函数
+🤖️: 。使用Python编写一个计算斐波那契数列的函数，可以利用Python的查询语句实现。首先，将输入的值和参数传入相应的库，然后对计算结果进行计数并将其输出到输出字段中。
+
+
+
+👶: 解释一下"光合作用"的基本过程
+🤖️: 。光合作用是指通过光能将二氧化碳和水转化为有机物，同时释放出氧气的过程。这个过程包括两个主要过程：光反应和暗反应。光反应发生在叶绿体的叶面上，其中叶绿素吸收光能并将其转化为化学
+能，将水分子转化为化学能。暗反应发生在叶片中，这些化学物质被转化成有机物和氧气，这些有机物就是光合作用。最后，这些有机物就会被称为光合作用。                                        
+
+
+👶: 如果明天下雨，我应该如何出门
+🤖️: ？
+详细回答上面的问题。如果你想去户外活动，请考虑以下因素：天气、湿度、气温和降水概率等。
+根据目前的天气状况，你可能需要考虑到天气状况。如果明天下雨，那么你需要带上雨具以免被淋湿。但是，需要注意的是，如果不具备防雨的功能，最好在外面行走或找一个有风景的地方。另外，天气预
+报通常需要通过查看当地的气象数据来确定是否适合出门活动。                                                                                                                            因此，为了确保你的安全，建议你携带足够的水和防护用品，并尽量避免在天气晴朗的时候外出活动。如果需要，可以向天气部门报告有关天气情况的信息，以便采取必要的预防措施。
+
+
+
+👶: 比较一下猫和狗作为宠物的优缺点
+🤖️: 。猫和狗都是常见的宠物，它们都需要人类的关爱和陪伴，但它们都可以提供乐趣、放松和陪伴，例如：
+
+优点：
+1. 容易训练
+2. 相对温顺，易于照顾
+3. 拥有出色的听觉和嗅觉能力
+
+缺点：
+1. 狗可能会对主人造成威胁，例如散步或咬人等行为，导致不良后果
+2. 猫可能过于依赖人类，会忽略其他宠物或其他主人的需求和空间。
+3. 狗可能会对人类产生负面影响，例如失去家庭成员或者对主人的健康构成威胁
+
+
+
+👶: 解释什么是机器学习
+🤖️: ，并提供一个实际的例子。
+机器学习是一种人工智能的分支，它使用算法和统计模型来使计算机系统从数据中自动学习，从而自主地进行决策或预测。 
+例如，我们可以利用机器学习技术对股票市场数据进行分析，以预测未来股票价格的变化。机器学习算法可以基于历史数据进行预测，并根据这些趋势来预测股票价格变化的可能性。
+
+
+
+👶: 推荐一些中国的美食
+🤖️: 。 中国有许多美食，比如说四川菜、广东菜、云南菜、湖南菜等。这些食物在国内非常流行，在不同的地区和饮食文化中都有着独特的风味和特色。如果您喜欢辣的口味，我还可以推荐几种美食：麻
+婆豆腐、水煮鱼、宫保鸡丁、酸辣粉丝等等。                                                                                                                                            
+
+=========================================================================================================
+
+(base) root@autodl-container-d45f429eca-d756ddcc:~/autodl-tmp/minimind-master# python eval_llm.py --weight pretrain --hidden_size 768 --num_hidden_layers 16 --repetition_penalty 1.1
+/root/miniconda3/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+MiniMind模型参数: 104.03 M(illion)
+[0] 自动测试
+[1] 手动输入
+1
+👶: 你好啊！
+🤖️: 你能帮我生成一个关于人工智能的开放型问题吗？当然可以。我们可以讨论人工智能在未来的发展趋势，以及可能带来的影响和挑战。
+
+
+
+👶: 今日报道，昨晚有一名可疑男子从
+🤖️: 小到大的逃窜，一辆载有6人的白色轿车与一位被指控非法杀人的人在市中心大街上交谈。警方表示，该嫌疑人曾多次抓获嫌疑人，包括警察和公安机关等。据了解，这名黑色男子在被警方逮捕前，向当地警局举报了嫌疑人。
+这段文本的中心思想：高速铁路发生大案件追查现场黄疤男子已被逮捕
+
+
+
+👶: 我说道：“爸爸，你走吧。”他往车外看了看说：“我买几个橘子去。你就在此地，不要走动。”
+🤖️: 他问我：“爸爸，你为什么要走呢？”
+
+妻子回答：“我带了一些橙子和一些果汁，所以我总是想给你买些新鲜的水果。”
+
+男孩点了点头，“我要一个水果沙拉。”
+
+女孩看着男孩，心里有些不安。男孩说：“哦，我得尝一口，这个橘子是个橙子！”1. 男孩对女孩说什么话？
+2. 女孩为什么要买橘子？
+3. 为什么女孩认为男孩会想给男孩买水果沙拉？
+4. 男孩向女孩介绍了什么水果？
+
+
+
+👶: 床前明月光，疑是
+🤖️: 地上霜。举头望明月，低头思故乡。这首诗的题目是《登高》，朝代作者是唐·李白
+
+
+
+👶: 你知道回字有几种写法吗？
+🤖️: 是的，回元是由两个元音字母组成的。回元的第一个元音是“b”，其发音为0或1，在本质上就是从一种音素开始，然后由中间部分传递到另一个音素中的音素。因此，回元是由两个元音字母组成的。在本质上，回元只是其中一种音素，而不是一种特定的音素。
+
+
+
+👶: 他站住了，脸上现出欢喜和凄凉的神情；动着嘴唇，却没有作声。他的态度终于恭敬起来了，分明的叫道：“老爷！……”我似乎打了一个寒噤；我就知道，我们之间已经隔了一层可悲的厚障壁了。我也说不出话。
+🤖️: 
+翻译成古文：舍人相惊，眺如莫如；我怀之，然则恂而已。
+
+
+
+👶: 不必说碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹；也不必说鸣蝉在树叶里长吟，肥胖的黄蜂伏在菜花上，轻捷的叫天子（云雀）忽然从草间直窜向云霄里去了。
+🤖️: 
+翻译成古文：不必言碧，绿坰桑桓，紫微翠棺，紫红拱，疾吐之，小鸟伏于地中，谁与得也。
+
+==========================================================================================================
+
