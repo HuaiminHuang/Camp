@@ -22,6 +22,118 @@ class MCPClient:
         self.exit_stack = AsyncExitStack()
         self.openai = AsyncOpenAI(base_url='https://api.openai-proxy.org/v1',
                                    api_key=os.getenv("OPENAI_API_KEY"))
+        self.history = []
+        self.max_history = 20  # 最多保留最近 20 条消息
+
+    async def process_query(self, query: str) -> str:
+        """处理自然语言查询：GPT + MCP 工具 + 历史 + roll out + 调试信息"""
+
+        # 1️⃣ 保存用户消息到历史
+        self.history.append({"role": "user", "content": query})
+
+        # 2️⃣ roll out: 保留最近 max_history 条
+        if len(self.history) > self.max_history:
+            self.history = self.history[-self.max_history:]
+
+        # 3️⃣ 准备 messages（只保留 user + assistant）
+        messages = [m for m in self.history if m['role'] in ("user", "assistant")]
+        if not messages:
+            messages = [{"role": "user", "content": query}]
+
+        print("📝 调试: 当前 GPT 消息输入：")
+        for i, m in enumerate(messages):
+            print(f"  {i} | {m['role']}: {m.get('content', '')}")
+
+        # 4️⃣ 获取可用工具
+        response = await self.session.list_tools()
+        available_tools = response.tools
+
+        tools = [
+            {
+                "type": "function",
+                "function": {
+                    "name": t.name,
+                    "description": t.description or "",
+                    "parameters": t.inputSchema,
+                },
+            }
+            for t in available_tools
+        ]
+
+        print(f"🛠 可用工具: {[t['function']['name'] for t in tools]}")
+
+        # ------------------------
+        # 5️⃣ 第一次 GPT 调用
+        # ------------------------
+        gpt_response = await self.openai.chat.completions.create(
+            model="gpt-4.1",
+            messages=messages,
+            tools=tools,
+            tool_choice="auto",
+            max_tokens=1000,
+        )
+
+        message = gpt_response.choices[0].message
+        final_text = message.content or ""
+
+        # ------------------------
+        # 6️⃣ 工具调用逻辑
+        # ------------------------
+        if hasattr(message, "tool_calls") and message.tool_calls:
+            for tool_call in message.tool_calls:
+                tool_name = tool_call.function.name
+                try:
+                    tool_args = json.loads(tool_call.function.arguments)
+                except Exception as e:
+                    print(f"⚠️ 工具参数解析失败: {e}")
+                    tool_args = {}
+
+                print(f"\n🧩 调用工具: {tool_name}")
+                print(f"   参数: {tool_args}")
+
+                # 执行 MCP 工具
+                tool_result = await self.session.call_tool(tool_name, tool_args)
+                result_text = ""
+                if tool_result.content and isinstance(tool_result.content, list):
+                    result_text = tool_result.content[0].text or ""
+
+                print(f"✅ 工具返回: {result_text}")
+
+                # ------------------------
+                # 6a️⃣ 把 assistant + tool 返回传给 GPT
+                # ------------------------
+                messages.append({
+                    "role": "assistant",
+                    "tool_calls": [tool_call]  # 每次只对应当前 tool_call
+                })
+                messages.append({
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "content": result_text
+                })
+
+            # ------------------------
+            # 6b️⃣ 第二轮 GPT 推理（带工具结果）
+            # ------------------------
+            final_completion = await self.openai.chat.completions.create(
+                model="gpt-4.1",
+                messages=messages,
+            )
+            final_text = final_completion.choices[0].message.content or ""
+
+        # ------------------------
+        # 7️⃣ 保存助手回复到历史，并 roll out
+        # ------------------------
+        self.history.append({"role": "assistant", "content": final_text})
+        if len(self.history) > self.max_history:
+            self.history = self.history[-self.max_history:]
+
+        print(f"\n🤖 GPT 最终回答: {final_text}\n")
+        print(f"📝 当前历史长度: {len(self.history)} 条")
+
+        return final_text
+
+
 
     async def connect_to_server(self, server_script_path: str):
         """连接到本地 MCP 服务器"""
@@ -52,84 +164,6 @@ class MCPClient:
         response = await self.session.list_tools()
         tools = response.tools
         print("\n✅ 已连接到 MCP 服务器，工具列表：", [tool.name for tool in tools])
-
-    async def process_query(self, query: str) -> str:
-        """处理自然语言查询：使用 GPT + MCP 工具"""
-
-        messages = [{"role": "user", "content": query}]
-
-        # 从 MCP 获取可用工具
-        response = await self.session.list_tools()
-        available_tools = response.tools
-
-        tools = [
-            {
-                "type": "function",
-                "function": {
-                    "name": t.name,
-                    "description": t.description or "",
-                    "parameters": t.inputSchema,
-                },
-            }
-            for t in available_tools
-        ]
-
-        # 第一次 GPT 调用
-        gpt_response = await self.openai.chat.completions.create(
-            model="gpt-4.1",  # 或 "gpt-5"（企业版）
-            messages=messages,
-            tools=tools,
-            tool_choice="auto",
-            max_tokens=1000,
-        )
-
-        message = gpt_response.choices[0].message
-        final_text = []
-
-        # 若模型决定调用工具
-        if hasattr(message, "tool_calls") and message.tool_calls:
-            for tool_call in message.tool_calls:
-                tool_name = tool_call.function.name
-                try:
-                    tool_args = json.loads(tool_call.function.arguments)
-                except Exception as e:
-                    print(f"⚠️ 工具参数解析失败: {e}")
-                    tool_args = {}
-
-                print(f"\n🧩 调用工具：{tool_name} 参数：{tool_args}")
-
-                # 执行 MCP 工具
-                tool_result = await self.session.call_tool(tool_name, tool_args)
-                result_text = tool_result.content[0].text if tool_result.content else "No content returned"
-
-                print(f"✅ 工具返回：{result_text}")
-
-
-                # 把工具结果传回 GPT
-                messages.append(
-                    {
-                        "role": "assistant",
-                        "tool_calls": message.tool_calls,
-                    }
-                )
-                messages.append(
-                    {
-                        "role": "tool",
-                        "tool_call_id": tool_call.id,
-                        "content": result_text,
-                    }
-                )
-
-            # 第二轮 GPT 推理（带工具结果）
-            final_completion = await self.openai.chat.completions.create(
-                model="gpt-4.1",
-                messages=messages,
-            )
-            return final_completion.choices[0].message.content
-
-        else:
-            # 没有调用工具，直接返回回答
-            return message.content
 
     async def chat_loop(self):
         """交互式聊天循环"""
