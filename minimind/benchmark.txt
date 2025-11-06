@@ -1,135 +1,485 @@
-lm_eval --model hf --model_args pretrained=./MiniMind2R1,device=cuda,dtype=auto --tasks ceval-valid_chinese_language_and_literature --batch_size 8 --trust_remote_code
-id_chinese_language_and_literature --batch_size 8 --trust_remote_code
-C:\Users\hhm18\miniconda3\envs\minimind\Lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml
-orch manual seed to 1234 | Setting fewshot manual seed to 1234                                                                                                2025-11-05:13:01:19 INFO     [evaluator:240] Initializing hf model, with arguments: {'pretrained': './MiniMind2R1', 'device': 'cuda', 'dtype': 'auto', 'trust_
-remote_code': True}                                                                                                                                           2025-11-05:13:01:19 INFO     [models.huggingface:156] Using device 'cuda'
-2025-11-05:13:01:19 INFO     [models.huggingface:423] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+lm_eval --model hf --model_args "pretrained=../minimind-master/MiniMind2R1" --tasks ceval-valid --device cuda:0 --batch_size 16 --output_path=../eval_results
+
+/root/miniconda3/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not inst
+all pynvml directly, please report this to the maintainers of the package that installed pynvml for you.                                                                            import pynvml  # type: ignore[import]
+2025-11-05:21:21:22 INFO     [__main__:450] Selected Tasks: ['ceval-valid']
+2025-11-05:21:21:22 INFO     [evaluator:202] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2025-11-05:21:21:22 INFO     [evaluator:240] Initializing hf model, with arguments: {'pretrained': '../minimind-master/MiniMind2R1'}
+2025-11-05:21:21:22 INFO     [models.huggingface:156] Using device 'cuda:0'
+2025-11-05:21:21:22 INFO     [models.huggingface:423] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
 `torch_dtype` is deprecated! Use `dtype` instead!
-2025-11-05:13:01:38 INFO     [api.task:434] Building contexts for ceval-valid_chinese_language_and_literature on rank 0...
-100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 23/23 [00:00
-<00:00, 735.04it/s]                                                                                                                                           2025-11-05:13:01:39 INFO     [evaluator:574] Running loglikelihood requests
-Running loglikelihood requests: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [00:00
-<00:00, 119.90it/s]                                                                                                                                           2025-11-05:13:01:50 INFO     [loggers.evaluation_tracker:280] Output path not provided, skipping saving results aggregated
-hf (pretrained=./MiniMind2R1,device=cuda,dtype=auto,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
-|                   Tasks                   |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
-|-------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
-|ceval-valid_chinese_language_and_literature|      2|none  |     0|acc     |↑  |0.2609|±  |0.0936|
-|                                           |       |none  |     0|acc_norm|↑  |0.2609|±  |0.0936|
 
-(minimind) PS C:\Users\hhm18\Desktop\course\minimind-master> lm_eval --model hf --model_args pretrained=./MiniMind2R1,device=cuda,dtype=auto --tasks ceval-val
-id* --batch_size 16 --trust_remote_code                                                                                                                       C:\Users\hhm18\miniconda3\envs\minimind\Lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml
-
-hf (pretrained=./MiniMind2R1,device=cuda,dtype=auto,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 16
-|                       Tasks                        |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
-|----------------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
-|ceval-valid                                         |      2|none  |      |acc     |↑  |0.2556|±  |0.0119|
-|                                                    |       |none  |      |acc_norm|↑  |0.2556|±  |0.0119|
-|ceval-valid_accountant                              |      2|none  |     0|acc     |↑  |0.3469|±  |0.0687|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3469|±  |0.0687|
-|ceval-valid_advanced_mathematics                    |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
-|ceval-valid_art_studies                             |      2|none  |     0|acc     |↑  |0.1818|±  |0.0682|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0682|
-|ceval-valid_basic_medicine                          |      2|none  |     0|acc     |↑  |0.1053|±  |0.0723|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1053|±  |0.0723|
-|ceval-valid_business_administration                 |      2|none  |     0|acc     |↑  |0.4242|±  |0.0874|
-|                                                    |       |none  |     0|acc_norm|↑  |0.4242|±  |0.0874|
-|ceval-valid_chinese_language_and_literature         |      2|none  |     0|acc     |↑  |0.2609|±  |0.0936|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2609|±  |0.0936|
-|ceval-valid_civil_servant                           |      2|none  |     0|acc     |↑  |0.1489|±  |0.0525|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1489|±  |0.0525|
-|ceval-valid_clinical_medicine                       |      2|none  |     0|acc     |↑  |0.1818|±  |0.0842|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0842|
-|ceval-valid_college_chemistry                       |      2|none  |     0|acc     |↑  |0.2917|±  |0.0948|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2917|±  |0.0948|
-|ceval-valid_college_economics                       |      2|none  |     0|acc     |↑  |0.3091|±  |0.0629|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3091|±  |0.0629|
-|ceval-valid_college_physics                         |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
-|ceval-valid_college_programming                     |      2|none  |     0|acc     |↑  |0.2973|±  |0.0762|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2973|±  |0.0762|
-|ceval-valid_computer_architecture                   |      2|none  |     0|acc     |↑  |0.0952|±  |0.0656|
-|                                                    |       |none  |     0|acc_norm|↑  |0.0952|±  |0.0656|
-|ceval-valid_computer_network                        |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_discrete_mathematics                    |      2|none  |     0|acc     |↑  |0.3125|±  |0.1197|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3125|±  |0.1197|
-|ceval-valid_education_science                       |      2|none  |     0|acc     |↑  |0.2069|±  |0.0766|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2069|±  |0.0766|
-|ceval-valid_electrical_engineer                     |      2|none  |     0|acc     |↑  |0.2432|±  |0.0715|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2432|±  |0.0715|
-|ceval-valid_environmental_impact_assessment_engineer|      2|none  |     0|acc     |↑  |0.1613|±  |0.0672|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1613|±  |0.0672|
-|ceval-valid_fire_engineer                           |      2|none  |     0|acc     |↑  |0.2581|±  |0.0799|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2581|±  |0.0799|
-|ceval-valid_high_school_biology                     |      2|none  |     0|acc     |↑  |0.1053|±  |0.0723|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1053|±  |0.0723|
-|ceval-valid_high_school_chemistry                   |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_high_school_chinese                     |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
-|ceval-valid_high_school_geography                   |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
-|ceval-valid_high_school_history                     |      2|none  |     0|acc     |↑  |0.1000|±  |0.0688|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1000|±  |0.0688|
-|ceval-valid_high_school_mathematics                 |      2|none  |     0|acc     |↑  |0.2778|±  |0.1086|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2778|±  |0.1086|
-|ceval-valid_high_school_physics                     |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_high_school_politics                    |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
-|ceval-valid_ideological_and_moral_cultivation       |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
-|ceval-valid_law                                     |      2|none  |     0|acc     |↑  |0.2917|±  |0.0948|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2917|±  |0.0948|
-|ceval-valid_legal_professional                      |      2|none  |     0|acc     |↑  |0.1739|±  |0.0808|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1739|±  |0.0808|
-|ceval-valid_logic                                   |      2|none  |     0|acc     |↑  |0.2273|±  |0.0914|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2273|±  |0.0914|
-|ceval-valid_mao_zedong_thought                      |      2|none  |     0|acc     |↑  |0.1667|±  |0.0777|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1667|±  |0.0777|
-|ceval-valid_marxism                                 |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_metrology_engineer                      |      2|none  |     0|acc     |↑  |0.3333|±  |0.0983|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3333|±  |0.0983|
-|ceval-valid_middle_school_biology                   |      2|none  |     0|acc     |↑  |0.2381|±  |0.0952|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2381|±  |0.0952|
-|ceval-valid_middle_school_chemistry                 |      2|none  |     0|acc     |↑  |0.3000|±  |0.1051|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3000|±  |0.1051|
-|ceval-valid_middle_school_geography                 |      2|none  |     0|acc     |↑  |0.2500|±  |0.1306|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2500|±  |0.1306|
-|ceval-valid_middle_school_history                   |      2|none  |     0|acc     |↑  |0.3182|±  |0.1016|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3182|±  |0.1016|
-|ceval-valid_middle_school_mathematics               |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
-|ceval-valid_middle_school_physics                   |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_middle_school_politics                  |      2|none  |     0|acc     |↑  |0.3810|±  |0.1086|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3810|±  |0.1086|
-|ceval-valid_modern_chinese_history                  |      2|none  |     0|acc     |↑  |0.3478|±  |0.1015|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3478|±  |0.1015|
-|ceval-valid_operating_system                        |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
-|ceval-valid_physician                               |      2|none  |     0|acc     |↑  |0.3265|±  |0.0677|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3265|±  |0.0677|
-|ceval-valid_plant_protection                        |      2|none  |     0|acc     |↑  |0.1818|±  |0.0842|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0842|
-|ceval-valid_probability_and_statistics              |      2|none  |     0|acc     |↑  |0.2222|±  |0.1008|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2222|±  |0.1008|
-|ceval-valid_professional_tour_guide                 |      2|none  |     0|acc     |↑  |0.2069|±  |0.0766|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2069|±  |0.0766|
-|ceval-valid_sports_science                          |      2|none  |     0|acc     |↑  |0.1579|±  |0.0859|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1579|±  |0.0859|
-|ceval-valid_tax_accountant                          |      2|none  |     0|acc     |↑  |0.3265|±  |0.0677|
-|                                                    |       |none  |     0|acc_norm|↑  |0.3265|±  |0.0677|
-|ceval-valid_teacher_qualification                   |      2|none  |     0|acc     |↑  |0.2500|±  |0.0660|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0660|
-|ceval-valid_urban_and_rural_planner                 |      2|none  |     0|acc     |↑  |0.2826|±  |0.0671|
-|                                                    |       |none  |     0|acc_norm|↑  |0.2826|±  |0.0671|
-|ceval-valid_veterinary_medicine                     |      2|none  |     0|acc     |↑  |0.1739|±  |0.0808|
-|                                                    |       |none  |     0|acc_norm|↑  |0.1739|±  |0.0808|
+2025-11-05:21:25:14 INFO     [loggers.evaluation_tracker:209] Saving results aggregated
+hf (pretrained=../minimind-master/MiniMind2R1), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 16
+|                         Tasks                         |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|ceval-valid                                            |      2|none  |      |acc     |↑  |0.2563|±  |0.0120|
+|                                                       |       |none  |      |acc_norm|↑  |0.2563|±  |0.0120|
+| - ceval-valid_accountant                              |      2|none  |     0|acc     |↑  |0.3469|±  |0.0687|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3469|±  |0.0687|
+| - ceval-valid_advanced_mathematics                    |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
+| - ceval-valid_art_studies                             |      2|none  |     0|acc     |↑  |0.1818|±  |0.0682|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0682|
+| - ceval-valid_basic_medicine                          |      2|none  |     0|acc     |↑  |0.1053|±  |0.0723|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1053|±  |0.0723|
+| - ceval-valid_business_administration                 |      2|none  |     0|acc     |↑  |0.4242|±  |0.0874|
+|                                                       |       |none  |     0|acc_norm|↑  |0.4242|±  |0.0874|
+| - ceval-valid_chinese_language_and_literature         |      2|none  |     0|acc     |↑  |0.2609|±  |0.0936|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2609|±  |0.0936|
+| - ceval-valid_civil_servant                           |      2|none  |     0|acc     |↑  |0.1489|±  |0.0525|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1489|±  |0.0525|
+| - ceval-valid_clinical_medicine                       |      2|none  |     0|acc     |↑  |0.1818|±  |0.0842|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0842|
+| - ceval-valid_college_chemistry                       |      2|none  |     0|acc     |↑  |0.2917|±  |0.0948|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2917|±  |0.0948|
+| - ceval-valid_college_economics                       |      2|none  |     0|acc     |↑  |0.3091|±  |0.0629|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3091|±  |0.0629|
+| - ceval-valid_college_physics                         |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
+| - ceval-valid_college_programming                     |      2|none  |     0|acc     |↑  |0.2973|±  |0.0762|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2973|±  |0.0762|
+| - ceval-valid_computer_architecture                   |      2|none  |     0|acc     |↑  |0.0952|±  |0.0656|
+|                                                       |       |none  |     0|acc_norm|↑  |0.0952|±  |0.0656|
+| - ceval-valid_computer_network                        |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_discrete_mathematics                    |      2|none  |     0|acc     |↑  |0.3125|±  |0.1197|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3125|±  |0.1197|
+| - ceval-valid_education_science                       |      2|none  |     0|acc     |↑  |0.2069|±  |0.0766|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2069|±  |0.0766|
+| - ceval-valid_electrical_engineer                     |      2|none  |     0|acc     |↑  |0.2432|±  |0.0715|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2432|±  |0.0715|
+| - ceval-valid_environmental_impact_assessment_engineer|      2|none  |     0|acc     |↑  |0.1613|±  |0.0672|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1613|±  |0.0672|
+| - ceval-valid_fire_engineer                           |      2|none  |     0|acc     |↑  |0.2581|±  |0.0799|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2581|±  |0.0799|
+| - ceval-valid_high_school_biology                     |      2|none  |     0|acc     |↑  |0.1053|±  |0.0723|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1053|±  |0.0723|
+| - ceval-valid_high_school_chemistry                   |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_high_school_chinese                     |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
+| - ceval-valid_high_school_geography                   |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
+| - ceval-valid_high_school_history                     |      2|none  |     0|acc     |↑  |0.1000|±  |0.0688|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1000|±  |0.0688|
+| - ceval-valid_high_school_mathematics                 |      2|none  |     0|acc     |↑  |0.2778|±  |0.1086|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2778|±  |0.1086|
+| - ceval-valid_high_school_physics                     |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_high_school_politics                    |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
+| - ceval-valid_ideological_and_moral_cultivation       |      2|none  |     0|acc     |↑  |0.2632|±  |0.1038|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2632|±  |0.1038|
+| - ceval-valid_law                                     |      2|none  |     0|acc     |↑  |0.2917|±  |0.0948|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2917|±  |0.0948|
+| - ceval-valid_legal_professional                      |      2|none  |     0|acc     |↑  |0.1739|±  |0.0808|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1739|±  |0.0808|
+| - ceval-valid_logic                                   |      2|none  |     0|acc     |↑  |0.2273|±  |0.0914|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2273|±  |0.0914|
+| - ceval-valid_mao_zedong_thought                      |      2|none  |     0|acc     |↑  |0.1667|±  |0.0777|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1667|±  |0.0777|
+| - ceval-valid_marxism                                 |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_metrology_engineer                      |      2|none  |     0|acc     |↑  |0.3333|±  |0.0983|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3333|±  |0.0983|
+| - ceval-valid_middle_school_biology                   |      2|none  |     0|acc     |↑  |0.2381|±  |0.0952|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2381|±  |0.0952|
+| - ceval-valid_middle_school_chemistry                 |      2|none  |     0|acc     |↑  |0.3000|±  |0.1051|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3000|±  |0.1051|
+| - ceval-valid_middle_school_geography                 |      2|none  |     0|acc     |↑  |0.2500|±  |0.1306|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2500|±  |0.1306|
+| - ceval-valid_middle_school_history                   |      2|none  |     0|acc     |↑  |0.3182|±  |0.1016|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3182|±  |0.1016|
+| - ceval-valid_middle_school_mathematics               |      2|none  |     0|acc     |↑  |0.2105|±  |0.0961|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2105|±  |0.0961|
+| - ceval-valid_middle_school_physics                   |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_middle_school_politics                  |      2|none  |     0|acc     |↑  |0.3810|±  |0.1086|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3810|±  |0.1086|
+| - ceval-valid_modern_chinese_history                  |      2|none  |     0|acc     |↑  |0.3478|±  |0.1015|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3478|±  |0.1015|
+| - ceval-valid_operating_system                        |      2|none  |     0|acc     |↑  |0.3158|±  |0.1096|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3158|±  |0.1096|
+| - ceval-valid_physician                               |      2|none  |     0|acc     |↑  |0.3265|±  |0.0677|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3265|±  |0.0677|
+| - ceval-valid_plant_protection                        |      2|none  |     0|acc     |↑  |0.1818|±  |0.0842|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1818|±  |0.0842|
+| - ceval-valid_probability_and_statistics              |      2|none  |     0|acc     |↑  |0.2222|±  |0.1008|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2222|±  |0.1008|
+| - ceval-valid_professional_tour_guide                 |      2|none  |     0|acc     |↑  |0.2069|±  |0.0766|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2069|±  |0.0766|
+| - ceval-valid_sports_science                          |      2|none  |     0|acc     |↑  |0.1579|±  |0.0859|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1579|±  |0.0859|
+| - ceval-valid_tax_accountant                          |      2|none  |     0|acc     |↑  |0.3061|±  |0.0665|
+|                                                       |       |none  |     0|acc_norm|↑  |0.3061|±  |0.0665|
+| - ceval-valid_teacher_qualification                   |      2|none  |     0|acc     |↑  |0.2500|±  |0.0660|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0660|
+| - ceval-valid_urban_and_rural_planner                 |      2|none  |     0|acc     |↑  |0.2826|±  |0.0671|
+|                                                       |       |none  |     0|acc_norm|↑  |0.2826|±  |0.0671|
+| - ceval-valid_veterinary_medicine                     |      2|none  |     0|acc     |↑  |0.1739|±  |0.0808|
+|                                                       |       |none  |     0|acc_norm|↑  |0.1739|±  |0.0808|
 
 |  Groups   |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
 |-----------|------:|------|------|--------|---|-----:|---|-----:|
-|ceval-valid|      2|none  |      |acc     |↑  |0.2556|±  |0.0119|
-|           |       |none  |      |acc_norm|↑  |0.2556|±  |0.0119|
+|ceval-valid|      2|none  |      |acc     |↑  |0.2563|±  | 0.012|
+|           |       |none  |      |acc_norm|↑  |0.2563|±  | 0.012|
+
+
+
+lm_eval --model hf --model_args pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True --tasks cmmlu --batch_size 8 --trust_remote_code --output_path ../eval_results
+2025-11-05:23:38:54,211 INFO     [evaluation_tracker.py:206] Saving results aggregated
+hf (pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
+|                    Tasks                     |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|----------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|cmmlu                                         |      1|none  |      |acc     |↑  |0.2523|±  |0.0040|
+|                                              |       |none  |      |acc_norm|↑  |0.2523|±  |0.0040|
+| - cmmlu_agronomy                             |      1|none  |     0|acc     |↑  |0.2663|±  |0.0341|
+|                                              |       |none  |     0|acc_norm|↑  |0.2663|±  |0.0341|
+| - cmmlu_anatomy                              |      1|none  |     0|acc     |↑  |0.2432|±  |0.0354|
+|                                              |       |none  |     0|acc_norm|↑  |0.2432|±  |0.0354|
+| - cmmlu_ancient_chinese                      |      1|none  |     0|acc     |↑  |0.2134|±  |0.0321|
+|                                              |       |none  |     0|acc_norm|↑  |0.2134|±  |0.0321|
+| - cmmlu_arts                                 |      1|none  |     0|acc     |↑  |0.2188|±  |0.0328|
+|                                              |       |none  |     0|acc_norm|↑  |0.2188|±  |0.0328|
+| - cmmlu_astronomy                            |      1|none  |     0|acc     |↑  |0.2545|±  |0.0340|
+|                                              |       |none  |     0|acc_norm|↑  |0.2545|±  |0.0340|
+| - cmmlu_business_ethics                      |      1|none  |     0|acc     |↑  |0.2727|±  |0.0309|
+|                                              |       |none  |     0|acc_norm|↑  |0.2727|±  |0.0309|
+| - cmmlu_chinese_civil_service_exam           |      1|none  |     0|acc     |↑  |0.2938|±  |0.0361|
+|                                              |       |none  |     0|acc_norm|↑  |0.2938|±  |0.0361|
+| - cmmlu_chinese_driving_rule                 |      1|none  |     0|acc     |↑  |0.2137|±  |0.0360|
+|                                              |       |none  |     0|acc_norm|↑  |0.2137|±  |0.0360|
+| - cmmlu_chinese_food_culture                 |      1|none  |     0|acc     |↑  |0.2574|±  |0.0376|
+|                                              |       |none  |     0|acc_norm|↑  |0.2574|±  |0.0376|
+| - cmmlu_chinese_foreign_policy               |      1|none  |     0|acc     |↑  |0.2336|±  |0.0411|
+|                                              |       |none  |     0|acc_norm|↑  |0.2336|±  |0.0411|
+| - cmmlu_chinese_history                      |      1|none  |     0|acc     |↑  |0.3065|±  |0.0257|
+|                                              |       |none  |     0|acc_norm|↑  |0.3065|±  |0.0257|
+| - cmmlu_chinese_literature                   |      1|none  |     0|acc     |↑  |0.3137|±  |0.0326|
+|                                              |       |none  |     0|acc_norm|↑  |0.3137|±  |0.0326|
+| - cmmlu_chinese_teacher_qualification        |      1|none  |     0|acc     |↑  |0.2514|±  |0.0325|
+|                                              |       |none  |     0|acc_norm|↑  |0.2514|±  |0.0325|
+| - cmmlu_clinical_knowledge                   |      1|none  |     0|acc     |↑  |0.2743|±  |0.0290|
+|                                              |       |none  |     0|acc_norm|↑  |0.2743|±  |0.0290|
+| - cmmlu_college_actuarial_science            |      1|none  |     0|acc     |↑  |0.2170|±  |0.0402|
+|                                              |       |none  |     0|acc_norm|↑  |0.2170|±  |0.0402|
+| - cmmlu_college_education                    |      1|none  |     0|acc     |↑  |0.1869|±  |0.0379|
+|                                              |       |none  |     0|acc_norm|↑  |0.1869|±  |0.0379|
+| - cmmlu_college_engineering_hydrology        |      1|none  |     0|acc     |↑  |0.3302|±  |0.0459|
+|                                              |       |none  |     0|acc_norm|↑  |0.3302|±  |0.0459|
+| - cmmlu_college_law                          |      1|none  |     0|acc     |↑  |0.2870|±  |0.0437|
+|                                              |       |none  |     0|acc_norm|↑  |0.2870|±  |0.0437|
+| - cmmlu_college_mathematics                  |      1|none  |     0|acc     |↑  |0.1905|±  |0.0385|
+|                                              |       |none  |     0|acc_norm|↑  |0.1905|±  |0.0385|
+| - cmmlu_college_medical_statistics           |      1|none  |     0|acc     |↑  |0.2736|±  |0.0435|
+|                                              |       |none  |     0|acc_norm|↑  |0.2736|±  |0.0435|
+| - cmmlu_college_medicine                     |      1|none  |     0|acc     |↑  |0.2601|±  |0.0266|
+|                                              |       |none  |     0|acc_norm|↑  |0.2601|±  |0.0266|
+| - cmmlu_computer_science                     |      1|none  |     0|acc     |↑  |0.2647|±  |0.0310|
+|                                              |       |none  |     0|acc_norm|↑  |0.2647|±  |0.0310|
+| - cmmlu_computer_security                    |      1|none  |     0|acc     |↑  |0.2281|±  |0.0322|
+|                                              |       |none  |     0|acc_norm|↑  |0.2281|±  |0.0322|
+| - cmmlu_conceptual_physics                   |      1|none  |     0|acc     |↑  |0.2721|±  |0.0368|
+|                                              |       |none  |     0|acc_norm|↑  |0.2721|±  |0.0368|
+| - cmmlu_construction_project_management      |      1|none  |     0|acc     |↑  |0.2374|±  |0.0362|
+|                                              |       |none  |     0|acc_norm|↑  |0.2374|±  |0.0362|
+| - cmmlu_economics                            |      1|none  |     0|acc     |↑  |0.2075|±  |0.0323|
+|                                              |       |none  |     0|acc_norm|↑  |0.2075|±  |0.0323|
+| - cmmlu_education                            |      1|none  |     0|acc     |↑  |0.3006|±  |0.0360|
+|                                              |       |none  |     0|acc_norm|↑  |0.3006|±  |0.0360|
+| - cmmlu_electrical_engineering               |      1|none  |     0|acc     |↑  |0.2616|±  |0.0336|
+|                                              |       |none  |     0|acc_norm|↑  |0.2616|±  |0.0336|
+| - cmmlu_elementary_chinese                   |      1|none  |     0|acc     |↑  |0.2381|±  |0.0269|
+|                                              |       |none  |     0|acc_norm|↑  |0.2381|±  |0.0269|
+| - cmmlu_elementary_commonsense               |      1|none  |     0|acc     |↑  |0.2121|±  |0.0291|
+|                                              |       |none  |     0|acc_norm|↑  |0.2121|±  |0.0291|
+| - cmmlu_elementary_information_and_technology|      1|none  |     0|acc     |↑  |0.2311|±  |0.0274|
+|                                              |       |none  |     0|acc_norm|↑  |0.2311|±  |0.0274|
+| - cmmlu_elementary_mathematics               |      1|none  |     0|acc     |↑  |0.2870|±  |0.0299|
+|                                              |       |none  |     0|acc_norm|↑  |0.2870|±  |0.0299|
+| - cmmlu_ethnology                            |      1|none  |     0|acc     |↑  |0.2519|±  |0.0375|
+|                                              |       |none  |     0|acc_norm|↑  |0.2519|±  |0.0375|
+| - cmmlu_food_science                         |      1|none  |     0|acc     |↑  |0.2378|±  |0.0357|
+|                                              |       |none  |     0|acc_norm|↑  |0.2378|±  |0.0357|
+| - cmmlu_genetics                             |      1|none  |     0|acc     |↑  |0.2216|±  |0.0314|
+|                                              |       |none  |     0|acc_norm|↑  |0.2216|±  |0.0314|
+| - cmmlu_global_facts                         |      1|none  |     0|acc     |↑  |0.3020|±  |0.0377|
+|                                              |       |none  |     0|acc_norm|↑  |0.3020|±  |0.0377|
+| - cmmlu_high_school_biology                  |      1|none  |     0|acc     |↑  |0.2367|±  |0.0328|
+|                                              |       |none  |     0|acc_norm|↑  |0.2367|±  |0.0328|
+| - cmmlu_high_school_chemistry                |      1|none  |     0|acc     |↑  |0.2576|±  |0.0382|
+|                                              |       |none  |     0|acc_norm|↑  |0.2576|±  |0.0382|
+| - cmmlu_high_school_geography                |      1|none  |     0|acc     |↑  |0.2712|±  |0.0411|
+|                                              |       |none  |     0|acc_norm|↑  |0.2712|±  |0.0411|
+| - cmmlu_high_school_mathematics              |      1|none  |     0|acc     |↑  |0.3293|±  |0.0368|
+|                                              |       |none  |     0|acc_norm|↑  |0.3293|±  |0.0368|
+| - cmmlu_high_school_physics                  |      1|none  |     0|acc     |↑  |0.2455|±  |0.0412|
+|                                              |       |none  |     0|acc_norm|↑  |0.2455|±  |0.0412|
+| - cmmlu_high_school_politics                 |      1|none  |     0|acc     |↑  |0.1958|±  |0.0333|
+|                                              |       |none  |     0|acc_norm|↑  |0.1958|±  |0.0333|
+| - cmmlu_human_sexuality                      |      1|none  |     0|acc     |↑  |0.2381|±  |0.0381|
+|                                              |       |none  |     0|acc_norm|↑  |0.2381|±  |0.0381|
+| - cmmlu_international_law                    |      1|none  |     0|acc     |↑  |0.2108|±  |0.0301|
+|                                              |       |none  |     0|acc_norm|↑  |0.2108|±  |0.0301|
+| - cmmlu_journalism                           |      1|none  |     0|acc     |↑  |0.2733|±  |0.0341|
+|                                              |       |none  |     0|acc_norm|↑  |0.2733|±  |0.0341|
+| - cmmlu_jurisprudence                        |      1|none  |     0|acc     |↑  |0.2579|±  |0.0216|
+|                                              |       |none  |     0|acc_norm|↑  |0.2579|±  |0.0216|
+| - cmmlu_legal_and_moral_basis                |      1|none  |     0|acc     |↑  |0.2150|±  |0.0281|
+|                                              |       |none  |     0|acc_norm|↑  |0.2150|±  |0.0281|
+| - cmmlu_logical                              |      1|none  |     0|acc     |↑  |0.2846|±  |0.0408|
+|                                              |       |none  |     0|acc_norm|↑  |0.2846|±  |0.0408|
+| - cmmlu_machine_learning                     |      1|none  |     0|acc     |↑  |0.2213|±  |0.0377|
+|                                              |       |none  |     0|acc_norm|↑  |0.2213|±  |0.0377|
+| - cmmlu_management                           |      1|none  |     0|acc     |↑  |0.2667|±  |0.0306|
+|                                              |       |none  |     0|acc_norm|↑  |0.2667|±  |0.0306|
+| - cmmlu_marketing                            |      1|none  |     0|acc     |↑  |0.2389|±  |0.0319|
+|                                              |       |none  |     0|acc_norm|↑  |0.2389|±  |0.0319|
+| - cmmlu_marxist_theory                       |      1|none  |     0|acc     |↑  |0.2910|±  |0.0331|
+|                                              |       |none  |     0|acc_norm|↑  |0.2910|±  |0.0331|
+| - cmmlu_modern_chinese                       |      1|none  |     0|acc     |↑  |0.2845|±  |0.0421|
+|                                              |       |none  |     0|acc_norm|↑  |0.2845|±  |0.0421|
+| - cmmlu_nutrition                            |      1|none  |     0|acc     |↑  |0.2345|±  |0.0353|
+|                                              |       |none  |     0|acc_norm|↑  |0.2345|±  |0.0353|
+| - cmmlu_philosophy                           |      1|none  |     0|acc     |↑  |0.2667|±  |0.0434|
+|                                              |       |none  |     0|acc_norm|↑  |0.2667|±  |0.0434|
+| - cmmlu_professional_accounting              |      1|none  |     0|acc     |↑  |0.2114|±  |0.0310|
+|                                              |       |none  |     0|acc_norm|↑  |0.2114|±  |0.0310|
+| - cmmlu_professional_law                     |      1|none  |     0|acc     |↑  |0.2607|±  |0.0303|
+|                                              |       |none  |     0|acc_norm|↑  |0.2607|±  |0.0303|
+| - cmmlu_professional_medicine                |      1|none  |     0|acc     |↑  |0.2606|±  |0.0227|
+|                                              |       |none  |     0|acc_norm|↑  |0.2606|±  |0.0227|
+| - cmmlu_professional_psychology              |      1|none  |     0|acc     |↑  |0.2328|±  |0.0278|
+|                                              |       |none  |     0|acc_norm|↑  |0.2328|±  |0.0278|
+| - cmmlu_public_relations                     |      1|none  |     0|acc     |↑  |0.2529|±  |0.0330|
+|                                              |       |none  |     0|acc_norm|↑  |0.2529|±  |0.0330|
+| - cmmlu_security_study                       |      1|none  |     0|acc     |↑  |0.1778|±  |0.0330|
+|                                              |       |none  |     0|acc_norm|↑  |0.1778|±  |0.0330|
+| - cmmlu_sociology                            |      1|none  |     0|acc     |↑  |0.2655|±  |0.0294|
+|                                              |       |none  |     0|acc_norm|↑  |0.2655|±  |0.0294|
+| - cmmlu_sports_science                       |      1|none  |     0|acc     |↑  |0.2364|±  |0.0332|
+|                                              |       |none  |     0|acc_norm|↑  |0.2364|±  |0.0332|
+| - cmmlu_traditional_chinese_medicine         |      1|none  |     0|acc     |↑  |0.2324|±  |0.0311|
+|                                              |       |none  |     0|acc_norm|↑  |0.2324|±  |0.0311|
+| - cmmlu_virology                             |      1|none  |     0|acc     |↑  |0.2544|±  |0.0336|
+|                                              |       |none  |     0|acc_norm|↑  |0.2544|±  |0.0336|
+| - cmmlu_world_history                        |      1|none  |     0|acc     |↑  |0.2360|±  |0.0336|
+|                                              |       |none  |     0|acc_norm|↑  |0.2360|±  |0.0336|
+| - cmmlu_world_religions                      |      1|none  |     0|acc     |↑  |0.2375|±  |0.0337|
+|                                              |       |none  |     0|acc_norm|↑  |0.2375|±  |0.0337|
+
+|Groups|Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|------|------:|------|------|--------|---|-----:|---|-----:|
+|cmmlu |      1|none  |      |acc     |↑  |0.2523|±  | 0.004|
+|      |       |none  |      |acc_norm|↑  |0.2523|±  | 0.004|
+
+
+lm_eval --model hf --model_args pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True --tasks aclue --batch_size 8 --trust_remote_code --output_path ../eval_results
+
+2025-11-05:23:53:35,930 INFO     [evaluation_tracker.py:206] Saving results aggregated
+hf (pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
+|                  Tasks                  |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-----------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|aclue                                    |      1|none  |      |acc     |↑  |0.2360|±  |0.0060|
+|                                         |       |none  |      |acc_norm|↑  |0.2360|±  |0.0060|
+| - aclue_ancient_chinese_culture         |      1|none  |     0|acc     |↑  |0.2500|±  |0.0373|
+|                                         |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0373|
+| - aclue_ancient_literature              |      1|none  |     0|acc     |↑  |0.2250|±  |0.0331|
+|                                         |       |none  |     0|acc_norm|↑  |0.2250|±  |0.0331|
+| - aclue_ancient_medical                 |      1|none  |     0|acc     |↑  |0.2227|±  |0.0287|
+|                                         |       |none  |     0|acc_norm|↑  |0.2227|±  |0.0287|
+| - aclue_ancient_phonetics               |      1|none  |     0|acc     |↑  |0.1700|±  |0.0378|
+|                                         |       |none  |     0|acc_norm|↑  |0.1700|±  |0.0378|
+| - aclue_basic_ancient_chinese           |      1|none  |     0|acc     |↑  |0.2691|±  |0.0282|
+|                                         |       |none  |     0|acc_norm|↑  |0.2691|±  |0.0282|
+| - aclue_couplet_prediction              |      1|none  |     0|acc     |↑  |0.2500|±  |0.0194|
+|                                         |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0194|
+| - aclue_homographic_character_resolution|      1|none  |     0|acc     |↑  |0.2020|±  |0.0180|
+|                                         |       |none  |     0|acc_norm|↑  |0.2020|±  |0.0180|
+| - aclue_named_entity_recognition        |      1|none  |     0|acc     |↑  |0.2160|±  |0.0184|
+|                                         |       |none  |     0|acc_norm|↑  |0.2160|±  |0.0184|
+| - aclue_poetry_appreciate               |      1|none  |     0|acc     |↑  |0.2233|±  |0.0412|
+|                                         |       |none  |     0|acc_norm|↑  |0.2233|±  |0.0412|
+| - aclue_poetry_context_prediction       |      1|none  |     0|acc     |↑  |0.2440|±  |0.0192|
+|                                         |       |none  |     0|acc_norm|↑  |0.2440|±  |0.0192|
+| - aclue_poetry_quality_assessment       |      1|none  |     0|acc     |↑  |0.2537|±  |0.0216|
+|                                         |       |none  |     0|acc_norm|↑  |0.2537|±  |0.0216|
+| - aclue_poetry_sentiment_analysis       |      1|none  |     0|acc     |↑  |0.2000|±  |0.0179|
+|                                         |       |none  |     0|acc_norm|↑  |0.2000|±  |0.0179|
+| - aclue_polysemy_resolution             |      1|none  |     0|acc     |↑  |0.2540|±  |0.0195|
+|                                         |       |none  |     0|acc_norm|↑  |0.2540|±  |0.0195|
+| - aclue_reading_comprehension           |      1|none  |     0|acc     |↑  |0.2178|±  |0.0413|
+|                                         |       |none  |     0|acc_norm|↑  |0.2178|±  |0.0413|
+| - aclue_sentence_segmentation           |      1|none  |     0|acc     |↑  |0.2800|±  |0.0201|
+|                                         |       |none  |     0|acc_norm|↑  |0.2800|±  |0.0201|
+
+|Groups|Version|Filter|n-shot| Metric |   |Value|   |Stderr|
+|------|------:|------|------|--------|---|----:|---|-----:|
+|aclue |      1|none  |      |acc     |↑  |0.236|±  | 0.006|
+|      |       |none  |      |acc_norm|↑  |0.236|±  | 0.006|
+
+
+lm_eval --model hf --model_args pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True --tasks tmmluplus --batch_size 8 --trust_remote_code --output_path ../eval_results
+
+2025-11-06:00:12:17,026 INFO     [evaluation_tracker.py:206] Saving results aggregated
+hf (pretrained=./MiniMind2,device=cuda,dtype=auto,trust_remote_code=True,trust_remote_code=True), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: 8
+|                       Tasks                        |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|----------------------------------------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|tmmluplus                                           |      2|none  |      |acc     |↑  |0.2515|±  |0.0031|
+|                                                    |       |none  |      |acc_norm|↑  |0.2515|±  |0.0031|
+| - tmmluplus_STEM                                   |      2|none  |      |acc     |↑  |0.2540|±  |0.0074|
+|                                                    |       |none  |      |acc_norm|↑  |0.2540|±  |0.0074|
+|  - advance chemistry                               |      2|none  |     0|acc     |↑  |0.2195|±  |0.0375|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2195|±  |0.0375|
+|  - basic medical science                           |      2|none  |     0|acc     |↑  |0.2662|±  |0.0143|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2662|±  |0.0143|
+|  - computer science                                |      2|none  |     0|acc     |↑  |0.2241|±  |0.0317|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2241|±  |0.0317|
+|  - engineering math                                |      2|none  |     0|acc     |↑  |0.2913|±  |0.0450|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2913|±  |0.0450|
+|  - junior chemistry                                |      2|none  |     0|acc     |↑  |0.2201|±  |0.0287|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2201|±  |0.0287|
+|  - junior math exam                                |      2|none  |     0|acc     |↑  |0.2457|±  |0.0326|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2457|±  |0.0326|
+|  - junior science exam                             |      2|none  |     0|acc     |↑  |0.3005|±  |0.0315|
+|                                                    |       |none  |     0|acc_norm|↑  |0.3005|±  |0.0315|
+|  - linear algebra                                  |      2|none  |     0|acc     |↑  |0.2857|±  |0.0706|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2857|±  |0.0706|
+|  - organic chemistry                               |      2|none  |     0|acc     |↑  |0.2385|±  |0.0410|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2385|±  |0.0410|
+|  - pharmacy                                        |      2|none  |     0|acc     |↑  |0.2404|±  |0.0216|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2404|±  |0.0216|
+|  - physics                                         |      2|none  |     0|acc     |↑  |0.2371|±  |0.0434|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2371|±  |0.0434|
+|  - secondary physics                               |      2|none  |     0|acc     |↑  |0.2768|±  |0.0425|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2768|±  |0.0425|
+|  - statistics and machine learning                 |      2|none  |     0|acc     |↑  |0.2679|±  |0.0297|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2679|±  |0.0297|
+|  - tve mathematics                                 |      2|none  |     0|acc     |↑  |0.2533|±  |0.0356|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2533|±  |0.0356|
+|  - tve natural sciences                            |      2|none  |     0|acc     |↑  |0.2406|±  |0.0208|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2406|±  |0.0208|
+| - tmmluplus_humanities                             |      2|none  |      |acc     |↑  |0.2564|±  |0.0104|
+|                                                    |       |none  |      |acc_norm|↑  |0.2564|±  |0.0104|
+|  - administrative law                              |      2|none  |     0|acc     |↑  |0.2476|±  |0.0211|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2476|±  |0.0211|
+|  - anti money laundering                           |      2|none  |     0|acc     |↑  |0.2537|±  |0.0377|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2537|±  |0.0377|
+|  - general principles of law                       |      2|none  |     0|acc     |↑  |0.2547|±  |0.0425|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2547|±  |0.0425|
+|  - introduction to law                             |      2|none  |     0|acc     |↑  |0.2658|±  |0.0288|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2658|±  |0.0288|
+|  - jce humanities                                  |      2|none  |     0|acc     |↑  |0.2556|±  |0.0462|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2556|±  |0.0462|
+|  - taxation                                        |      2|none  |     0|acc     |↑  |0.2747|±  |0.0231|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2747|±  |0.0231|
+|  - trust practice                                  |      2|none  |     0|acc     |↑  |0.2444|±  |0.0215|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2444|±  |0.0215|
+| - tmmluplus_other                                  |      2|none  |      |acc     |↑  |0.2479|±  |0.0046|
+|                                                    |       |none  |      |acc_norm|↑  |0.2479|±  |0.0046|
+|  - accounting                                      |      2|none  |     0|acc     |↑  |0.2565|±  |0.0317|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2565|±  |0.0317|
+|  - agriculture                                     |      2|none  |     0|acc     |↑  |0.2119|±  |0.0334|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2119|±  |0.0334|
+|  - auditing                                        |      2|none  |     0|acc     |↑  |0.2473|±  |0.0184|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2473|±  |0.0184|
+|  - business management                             |      2|none  |     0|acc     |↑  |0.2590|±  |0.0373|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2590|±  |0.0373|
+|  - culinary skills                                 |      2|none  |     0|acc     |↑  |0.2158|±  |0.0241|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2158|±  |0.0241|
+|  - dentistry                                       |      2|none  |     0|acc     |↑  |0.2481|±  |0.0217|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2481|±  |0.0217|
+|  - finance banking                                 |      2|none  |     0|acc     |↑  |0.2593|±  |0.0379|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2593|±  |0.0379|
+|  - financial analysis                              |      2|none  |     0|acc     |↑  |0.2513|±  |0.0222|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2513|±  |0.0222|
+|  - fire science                                    |      2|none  |     0|acc     |↑  |0.2258|±  |0.0377|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2258|±  |0.0377|
+|  - insurance studies                               |      2|none  |     0|acc     |↑  |0.2605|±  |0.0159|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2605|±  |0.0159|
+|  - junior social studies                           |      2|none  |     0|acc     |↑  |0.2143|±  |0.0367|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2143|±  |0.0367|
+|  - logic reasoning                                 |      2|none  |     0|acc     |↑  |0.2230|±  |0.0354|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2230|±  |0.0354|
+|  - management accounting                           |      2|none  |     0|acc     |↑  |0.2558|±  |0.0298|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2558|±  |0.0298|
+|  - marketing management                            |      2|none  |     0|acc     |↑  |0.3118|±  |0.0483|
+|                                                    |       |none  |     0|acc_norm|↑  |0.3118|±  |0.0483|
+|  - mechanical                                      |      2|none  |     0|acc     |↑  |0.2712|±  |0.0411|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2712|±  |0.0411|
+|  - music                                           |      2|none  |     0|acc     |↑  |0.2446|±  |0.0258|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2446|±  |0.0258|
+|  - nautical science                                |      2|none  |     0|acc     |↑  |0.2432|±  |0.0183|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2432|±  |0.0183|
+|  - official document management                    |      2|none  |     0|acc     |↑  |0.2387|±  |0.0287|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2387|±  |0.0287|
+|  - optometry                                       |      2|none  |     0|acc     |↑  |0.2576|±  |0.0144|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2576|±  |0.0144|
+|  - pharmacology                                    |      2|none  |     0|acc     |↑  |0.2530|±  |0.0181|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2530|±  |0.0181|
+|  - real estate                                     |      2|none  |     0|acc     |↑  |0.2935|±  |0.0477|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2935|±  |0.0477|
+|  - technical                                       |      2|none  |     0|acc     |↑  |0.2363|±  |0.0212|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2363|±  |0.0212|
+|  - trade                                           |      2|none  |     0|acc     |↑  |0.2430|±  |0.0192|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2430|±  |0.0192|
+|  - traditional chinese medicine clinical medicine  |      2|none  |     0|acc     |↑  |0.2482|±  |0.0260|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2482|±  |0.0260|
+|  - tve design                                      |      2|none  |     0|acc     |↑  |0.2271|±  |0.0191|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2271|±  |0.0191|
+|  - veterinary pathology                            |      2|none  |     0|acc     |↑  |0.2650|±  |0.0263|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2650|±  |0.0263|
+|  - veterinary pharmacology                         |      2|none  |     0|acc     |↑  |0.2500|±  |0.0187|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0187|
+| - tmmluplus_social_sciences                        |      2|none  |      |acc     |↑  |0.2539|±  |0.0056|
+|                                                    |       |none  |      |acc_norm|↑  |0.2539|±  |0.0056|
+|  - chinese language and literature                 |      2|none  |     0|acc     |↑  |0.2362|±  |0.0302|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2362|±  |0.0302|
+|  - clinical psychology                             |      2|none  |     0|acc     |↑  |0.2480|±  |0.0388|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2480|±  |0.0388|
+|  - economics                                       |      2|none  |     0|acc     |↑  |0.2850|±  |0.0228|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2850|±  |0.0228|
+|  - education                                       |      2|none  |     0|acc     |↑  |0.2500|±  |0.0390|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2500|±  |0.0390|
+|  - education (profession level)                    |      2|none  |     0|acc     |↑  |0.2325|±  |0.0192|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2325|±  |0.0192|
+|  - educational psychology                          |      2|none  |     0|acc     |↑  |0.2898|±  |0.0343|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2898|±  |0.0343|
+|  - geography of taiwan                             |      2|none  |     0|acc     |↑  |0.2578|±  |0.0158|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2578|±  |0.0158|
+|  - human behavior                                  |      2|none  |     0|acc     |↑  |0.2621|±  |0.0251|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2621|±  |0.0251|
+|  - junior chinese exam                             |      2|none  |     0|acc     |↑  |0.2629|±  |0.0334|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2629|±  |0.0334|
+|  - macroeconomics                                  |      2|none  |     0|acc     |↑  |0.2409|±  |0.0211|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2409|±  |0.0211|
+|  - national protection                             |      2|none  |     0|acc     |↑  |0.2275|±  |0.0289|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2275|±  |0.0289|
+|  - occupational therapy for psychological disorders|      2|none  |     0|acc     |↑  |0.2560|±  |0.0187|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2560|±  |0.0187|
+|  - physical education                              |      2|none  |     0|acc     |↑  |0.2626|±  |0.0330|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2626|±  |0.0330|
+|  - politic science                                 |      2|none  |     0|acc     |↑  |0.2392|±  |0.0135|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2392|±  |0.0135|
+|  - taiwanese hokkien                               |      2|none  |     0|acc     |↑  |0.2636|±  |0.0389|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2636|±  |0.0389|
+|  - three principles of people                      |      2|none  |     0|acc     |↑  |0.2662|±  |0.0376|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2662|±  |0.0376|
+|  - ttqav2                                          |      2|none  |     0|acc     |↑  |0.2212|±  |0.0392|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2212|±  |0.0392|
+|  - tve chinese language                            |      2|none  |     0|acc     |↑  |0.2816|±  |0.0205|
+|                                                    |       |none  |     0|acc_norm|↑  |0.2816|±  |0.0205|
+
+|           Groups           |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|----------------------------|------:|------|------|--------|---|-----:|---|-----:|
+|tmmluplus                   |      2|none  |      |acc     |↑  |0.2515|±  |0.0031|
+|                            |       |none  |      |acc_norm|↑  |0.2515|±  |0.0031|
+| - tmmluplus_STEM           |      2|none  |      |acc     |↑  |0.2540|±  |0.0074|
+|                            |       |none  |      |acc_norm|↑  |0.2540|±  |0.0074|
+| - tmmluplus_humanities     |      2|none  |      |acc     |↑  |0.2564|±  |0.0104|
+|                            |       |none  |      |acc_norm|↑  |0.2564|±  |0.0104|
+| - tmmluplus_other          |      2|none  |      |acc     |↑  |0.2479|±  |0.0046|
+|                            |       |none  |      |acc_norm|↑  |0.2479|±  |0.0046|
+| - tmmluplus_social_sciences|      2|none  |      |acc     |↑  |0.2539|±  |0.0056|
+|                            |       |none  |      |acc_norm|↑  |0.2539|±  |0.0056|
