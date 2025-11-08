@@ -1,0 +1,146 @@
+lm_eval --model hf --model_args "pretrained=./Qwen2.5-7B-Instruct,trust_remote_code=True" --tasks aclue --device cuda:0 --batch_size 16 --output_path=./eval_results
+/root/miniconda3/lib/python3.12/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install
+ pynvml directly, please report this to the maintainers of the package that installed pynvml for you.                                                                                  import pynvml  # type: ignore[import]
+2025-11-07:18:20:41 INFO     [__main__:440] Selected Tasks: ['aclue']
+2025-11-07:18:20:41 WARNING  [evaluator:163] Model appears to be an instruct variant but chat template is not applied. Recommend setting `apply_chat_template` (optionally `fewshot_a
+s_multiturn`).                                                                                                                                                                       2025-11-07:18:20:41 INFO     [evaluator:189] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2025-11-07:18:20:41 INFO     [evaluator:227] Initializing hf model, with arguments: {'pretrained': './Qwen2.5-7B-Instruct', 'trust_remote_code': True}
+2025-11-07:18:20:41 INFO     [models.huggingface:137] Using device 'cuda:0'
+2025-11-07:18:20:42 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda:0'}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4/4 [00:04<00:00,  1.09s/it]
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 1268, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/root/miniconda3/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 642, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 1209, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 1581, in _create_direct_connection
+    raise last_exc
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 1550, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/connector.py", line 1265, in _wrap_create_connection
+    async with ceil_timeout(
+  File "/root/miniconda3/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/implementations/http.py", line 423, in _info
+    await _file_info(
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/implementations/http.py", line 833, in _file_info
+    r = await session.get(url, allow_redirects=ar, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/aiohttp/client.py", line 738, in _connect_and_send_request
+    raise ConnectionTimeoutError(
+aiohttp.client_exceptions.ConnectionTimeoutError: Connection timeout to host https://huggingface.co/datasets/tyouisen/aclue/resolve/main/aclue_v1_0_0.zip
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/miniconda3/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+             ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/evaluator.py", line 268, in simple_evaluate
+    task_dict = get_task_dict(
+                ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 635, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 426, in load_task_or_group
+    collections.ChainMap(
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 428, in <lambda>
+    lambda task: self._load_individual_task_or_group(task),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 410, in _load_individual_task_or_group
+    group_name: dict(collections.ChainMap(*map(fn, reversed(subtask_list))))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 326, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/tasks/__init__.py", line 286, in _load_task
+    task_object = ConfigurableTask(config=config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/api/task.py", line 863, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/root/autodl-tmp/lm-evaluation-harness-0.4.9/lm_eval/api/task.py", line 991, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/load.py", line 2084, in load_dataset
+    builder_instance.download_and_prepare(
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/builder.py", line 925, in download_and_prepare
+    self._download_and_prepare(
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/builder.py", line 1649, in _download_and_prepare
+    super()._download_and_prepare(
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/builder.py", line 979, in _download_and_prepare
+    split_generators = self._split_generators(dl_manager, **split_generators_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/datasets_modules/datasets/tyouisen--aclue/79ef32e0a27b1f5345166956ec950c795f2b5319cc496f4b07f7adc5cc108682/aclue.py", line 74, in _split_gen
+erators                                                                                                                                                                                  data_dir = dl_manager.download_and_extract(_URL)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/download/download_manager.py", line 326, in download_and_extract
+    return self.extract(self.download(url_or_urls))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/download/download_manager.py", line 159, in download
+    downloaded_path_or_paths = map_nested(
+                               ^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/utils/py_utils.py", line 494, in map_nested
+    mapped = function(data_struct)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/download/download_manager.py", line 220, in _download_batched
+    self._download_single(url_or_filename, download_config=download_config)
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/download/download_manager.py", line 229, in _download_single
+    out = cached_path(url_or_filename, download_config=download_config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/utils/file_utils.py", line 214, in cached_path
+    output_path = get_from_cache(
+                  ^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/utils/file_utils.py", line 391, in get_from_cache
+    response = fsspec_head(url, storage_options=storage_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/datasets/utils/file_utils.py", line 305, in fsspec_head
+    return fs.info(path)
+           ^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/asyn.py", line 103, in sync
+    raise return_result
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/asyn.py", line 56, in _runner
+    result[0] = await coro
+                ^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/fsspec/implementations/http.py", line 436, in _info
+    raise FileNotFoundError(url) from exc
+FileNotFoundError: https://huggingface.co/datasets/tyouisen/aclue/resolve/main/aclue_v1_0_0.zip

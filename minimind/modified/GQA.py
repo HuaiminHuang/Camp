@@ -66,17 +66,21 @@ class Attention(nn.Module):
         xv = xv.view(bsz, seq_len, self.n_local_kv_heads, self.head_dim)
 
         # 使用 RoPE 编码
+        # 只截取当前序列长度的 cos/sin
         cos, sin = position_embeddings
         xq, xk = apply_rotary_pos_emb(xq, xk, cos[:seq_len], sin[:seq_len])
 
-        # kv_cache实现
+        # kv_cache实现(推理阶段)
+        # 实际是把上一轮的kv_value cache后传入免去重复计算
+        # concat(K_{1:t-1}, K_t) & concat(V_{1:t-1}, V_t) shape is [b, past_seq_len + 1, n_kv_head, head_dim]
+        # 其中的 K,V_{1:t-1} 已经计算过的值
         if past_key_value is not None:
             xk = torch.cat([past_key_value[0], xk], dim=1)
             xv = torch.cat([past_key_value[1], xv], dim=1)
         past_kv = (xk, xv) if use_cache else None
         
         # 对于kv shape[-2] 需要重复到和 query 一样的维度
-        # 然后交换1，2维度计算 attention shape is [b, n, s, dim]
+        # 然后交换1，2维度计算 xk,v shape is [b, n, s, dim]
         xq, xk, xv = (
             xq.transpose(1, 2),
             repeat_kv(xk, self.n_rep).transpose(1, 2),
@@ -102,10 +106,10 @@ class Attention(nn.Module):
                 diagonal=1
             ).unsqueeze(0).unsqueeze(0)  # scores+mask
 
-            # 加入 attention mask
+            # 加入 attention mask [b, s]
             if attention_mask is not None:
-                extended_attention_mask = attention_mask.unsqueeze(1).unsqueeze(2)
-                extended_attention_mask = (1.0 - extended_attention_mask) * -1e9
+                extended_attention_mask = attention_mask.unsqueeze(1).unsqueeze(2)  # [b, 1, 1, s]
+                extended_attention_mask = (1.0 - extended_attention_mask) * -1e9  # 反码设置为 -inf
                 scores = scores + extended_attention_mask
 
             # 归一化logits + dropout
@@ -115,6 +119,7 @@ class Attention(nn.Module):
             output = scores @ xv
         
         # 最后换回输入的 shape [b, s, n * head_dim]
+        # 同时cache这一轮(k, v) 为 past_kv
         output = output.transpose(1, 2).reshape(bsz, seq_len, -1)
         output = self.resid_dropout(self.o_proj(output))
         return output, past_kv
