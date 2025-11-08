@@ -282,5 +282,7 @@ hf (pretrained=./Qwen2.5-7B-Instruct,trust_remote_code=True), gen_kwargs: (None)
 |           |       |none  |      |acc_norm|↑  |0.7964|±  |0.0105|
 ================================================================================
 
+lm-eval --model hf --model_args "pretrained=./Qwen2.5-7B-Instruct,trust_remote_code=True" --tasks cmmlu --device cuda:0 --batch_size 4 --output_path=./eval_results
+
 
 ================================================================================
