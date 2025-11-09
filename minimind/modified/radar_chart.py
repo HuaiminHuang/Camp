@@ -61,6 +61,6 @@ if __name__ == "__main__":
     chart = BenchmarkRadarChart(labels, r_lim=(0.2, 0.55))
     chart.add_model("MiniMind-0.1B", [0.2563, 0.2523, 0.2360, 0.2515], color='green')
     # chart.add_model("Qwen2.5-7B-Instaruct", [0.2950, 0.3100, 0.2800, 0.3000], color='red')
-    chart.add_model("Qwen2.5-0.5B-Instaruct", [0.5297, 0.5082, 0.3377, 0.3224], color='blue')
+    chart.add_model("Qwen2.5-0.5B-Instaruct", [0.5297, 0.5082, 0.3377, 0.3224], color='yellow')
 
     chart.plot(title="Benchmark Comparison Across Models", save_path="1.png")
