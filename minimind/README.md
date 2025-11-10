@@ -218,8 +218,13 @@ python train_dpo.py
 
 <p align="center">
   <img src="./img/dpo.png" width="45%"/>
+  <img src="./img/chosen_and_reject.png" width="40%"/>
+  <img src="./img/gap.png" width="45%"/>
 </p>
 
+<p align="center">
+
+</p>
 
 ### a. 评估命令
 ```bash
@@ -283,7 +288,10 @@ DPO 阶段成功地将人类的偏好注入模型中，使其行为更加谨慎�
   ```
 - **核心技巧**: `README.md` 提到，为了让模型严格遵守 `<think>`/`<answer>` 格式，训练脚本 `train_distill_reason.py` 对这些特殊标签 token 的 `loss` 施加了更高的惩罚权重，确保模型学会这个结构。
 
-> ![](./img/reason.png)
+<p align="center">
+  <img src="./img/reasoning.png" width="45%"/>
+</p>
+
 ## 4. 评估
 `reasoning.txt` 中的评估结果显示，模型已经能够稳定地生成带有思考过程的回复。
 - **问**: `你有什么特长？`
@@ -399,6 +407,10 @@ GRPO 方法让模型具备了在线探索和自我优化的能力，理论上有
   |-----------|------:|------|------|--------|---|-----:|---|-----:|
   |ceval-valid|      2|none  |      |acc     |↑  |0.2556|±  |0.0119|
   |           |       |none  |      |acc_norm|↑  |0.2556|±  |0.0119|
+
+<p align="left">
+<img src="./img/benchmark_minimind.png" width="35%"/>
+</p>
 
 ---
 
