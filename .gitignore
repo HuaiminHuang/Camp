@@ -7,6 +7,7 @@ model/
 code/
 AI-Guide-and-Demos-zh_CN-master/
 extract-dialogue-master/
+__pycache__/
 
 # 忽略jupyter notebook检查点
 .ipynb_checkpoints/
