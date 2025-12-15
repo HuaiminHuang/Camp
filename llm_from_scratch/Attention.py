@@ -14,8 +14,8 @@ class MHA(nn.Module):
         return
             out: [b, h, s_q, d]
         """
-        embd_size = Q.size(-1)
-        scores = torch.matmul(Q, K.transpose(-1, -2)) / math.sqrt(embd_size)
+        d_k = Q.size(-1)
+        scores = torch.matmul(Q, K.transpose(-1, -2)) / math.sqrt(d_k)
 
         if mask is not None:
             scores = scores.masked_fill(mask==0, float("-inf"))
