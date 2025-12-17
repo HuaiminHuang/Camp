@@ -38,7 +38,9 @@ $$
 
 下图直观地展示了 KDA 的核心循环更新机制：
 
-![KDA Recurrence Diagram](./img/3_0.jpg)
+<div align="center">
+    <img src="./img/3_0.jpg" width="80%">
+</div>
 *图1：KDA 核心更新机制图示。记忆状态 $\mathbf{S}_{t-1}$ 首先经过细粒度的对角遗忘门 $\mathrm{Diag}(\alpha_t)$ 进行通道级别的衰减，然后再通过增量法则 $(\mathbf{I} - \beta_t \mathbf{k}_t \mathbf{k}_t^\top)$ 进行修正，并加上新的键值信息。*
 
 ### 2.2 细粒度控制的优势
@@ -49,7 +51,9 @@ $$
 
 3.  **表达能力增强**: 这种精细化的控制能力极大地增强了模型的表达能力。如下图所示，在需要精确记忆和复杂状态追踪的合成任务（如 Palindrome 复制、多查询关联召回）上，KDA 的性能和收敛速度显著优于其前身 GDN。
 
-![Synthetic Task Results](./img/6_0.jpg)
+<div align="center">
+    <img src="./img/6_0.jpg" width="60%">
+</div>
 *图2：KDA 在合成任务上的表现。无论是在 Palindrome、MQAR 还是状态追踪任务中，KDA（蓝色/绿色实线）都取得了最高的准确率和最快的收敛速度，验证了细粒度记忆管理的有效性。*
 
 ---
@@ -61,7 +65,9 @@ $$
 
 下图展示了 Kimi Linear 的整体混合架构：
 
-![Kimi Linear Architecture](./img/5_0.jpg)
+<div align="center">
+    <img src="./img/5_0.jpg" width="60%">
+</div>
 *图3：Kimi Linear 整体架构图。模型由 KDA 层和全注意力层（MLA）以 3:1 的比例交错堆叠而成。关键在于，MLA 层不使用位置编码（NoPE），位置感知的任务完全由 KDA 层承担。*
 
 ### 3.1 原理：从固定编码到动态编码
@@ -69,13 +75,15 @@ $$
 #### 传统 RoPE 的工作方式
 在带有 RoPE 的注意力机制中，Query 和 Key 之间的分数计算隐式地包含了位置信息：
 $$ 
-s_{t,i} = (\mathbf{R}_t \mathbf{q}_t)^\top (\mathbf{R}_i \mathbf{k}_i) = \mathbf{q}_t^\top \mathbf{R}_{t-i}^\top \mathbf{k}_i $$ 
+s_{t,i} = (\mathbf{R}_t \mathbf{q}_t)^\top (\mathbf{R}_i \mathbf{k}_i) = \mathbf{q}_t^\top \mathbf{R}_{t-i}^\top \mathbf{k}_i 
+$$ 
 这里的 $\mathbf{R}$ 是旋转矩阵，其参数（频率）是**固定的**，仅与绝对位置或相对位置有关，而与输入内容无关。
 
 #### KDA 如何担当位置编码器
 KDA 的循环结构天然地编码了位置信息。我们可以将其展开，观察其与上述公式的深刻联系。KDA 的输出可以表达为：
 $$
-\mathbf{o}_{t} = \sum_{i = 1}^{t}\left(\mathbf{q}_{t}^{\top}\left(\prod_{j = i + 1}^{t}\mathbf{A}_{j}\right)\mathbf{k}_{i}\right)\mathbf{v}_{i} $$ 
+\mathbf{o}_{t} = \sum_{i = 1}^{t}\left(\mathbf{q}_{t}^{\top}\left(\prod_{j = i + 1}^{t}\mathbf{A}_{j}\right)\mathbf{k}_{i}\right)\mathbf{v}_{i} 
+$$ 
 这里的核心是状态转移矩阵 $\mathbf{A}_{j} = \mathrm{Diag}(\alpha_{j})(\mathbf{I} - \beta_{j}\mathbf{k}_{j}\mathbf{k}_{j}^{\top})$。
 - 累积乘积项 $\prod_{j = i + 1}^{t}\mathbf{A}_{j}$ 扮演了与 RoPE 中的旋转矩阵 $\mathbf{R}_{t-i}$ 类似的角色，它建立了从位置 $i$ 到 $t$ 的关系。
 - **关键区别**在于：RoPE 的 $\mathbf{R}$ 矩阵是**固定的**，而 KDA 的 $\mathbf{A}_j$ 矩阵是**动态的、数据依赖的**，因为它内部的 $\alpha_j$, $\beta_j$, 和 $\mathbf{k}_j$ 都是由当前输入 $x_j$ 动态计算得出的。

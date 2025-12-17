@@ -200,7 +200,7 @@ Qwen3-Next通过其精巧的**混合注意力机制**和**高稀疏度MoE架构*
 *   在 Qwen3-Next 中，专家被分为两组：
     *   **注意力专家 (Attention Experts)**：执行传统的注意力计算（如 \times$ 所示）。
     *   **Gated DeltaNet 专家 (Gated DeltaNet Experts)**：执行 Gated DeltaNet 计算（如 $3\times$ 所示）。
-*   图中的 \times$ 和 $3\times$ 表示在每个 MoE 路由周期中，模型可能**选择 1 个 Attention 专家和 3 个 Gated DeltaNet 专家**进行计算，并将它们的输出加权求和，然后作为 MoE 模块的最终输出。
+*   图中的 $1\times$ 和 $3\times$ 表示在每个 MoE 路由周期中，模型可能**选择 1 个 Attention 专家和 3 个 Gated DeltaNet 专家**进行计算，并将它们的输出加权求和，然后作为 MoE 模块的最终输出。
 *   这种混合专家的设计允许模型根据输入内容，灵活地选择使用二次复杂度的强大**注意力机制**（用于关键信息捕捉）还是线性复杂度的**Gated DeltaNet**（用于长文本高效处理），从而在性能和效率之间取得平衡。
 
 ##### **残差连接与归一化**
