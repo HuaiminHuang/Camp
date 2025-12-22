@@ -52,7 +52,7 @@ $$
 
 AWQ通过一个简单的搜索过程来确定每个通道的最佳缩放因子 $s$。它将复杂的优化目标：
 $$
-\mathbf{s}^{*} = \underset {\mathbf{s}}{\arg \min}\mathcal{L}(\mathbf{s}) = \| Q(\mathbf{W}\cdot \mathrm{diag}(\mathbf{s}))(\mathrm{diag}(\mathbf{s})^{-1}\cdot \mathbf{X}) - \mathbf{W}\mathbf{X}\|
+\mathbf{s}^{*} = \underset {\mathbf{s}}{\arg \min}\mathcal{L}(\mathbf{s}) = \left\| Q(\mathbf{W}\cdot \mathrm{diag}(\mathbf{s}))(\mathrm{diag}(\mathbf{s})^{-1}\cdot \mathbf{X}) - \mathbf{W}\mathbf{X}\right\|
 $$
 简化为寻找一个单一的超参数 $\alpha$。它将缩放因子 $s$ 参数化为与激活值大小 $s_X$ 相关的形式：
 $$
