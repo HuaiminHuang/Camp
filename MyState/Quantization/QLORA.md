@@ -20,7 +20,7 @@ $$Y = XW + s \cdot X \cdot L_1 \cdot L_2$$
 
 在微调过程中，只有 $L_1$ 和 $L_2$ 的参数被更新，其参数量（$dr + rk$）远小于原始矩阵 $W$ 的参数量（$dk$），从而实现了参数高效性。
 
-![LoRA vs Full-Finetuning](images/2_0.jpg)
+![LoRA vs Full-Finetuning](./qlora/images/2_0.jpg)
 <center>图1: 不同微调方法的内存需求对比。QLoRA在LoRA的基础上，通过量化基础模型进一步降低了显存占用。</center>
 
 ### 1.2 QLoRA 整体架构
@@ -48,8 +48,7 @@ NF4是QLoRA实现高精度4-bit量化的基石。它是一种专门为通常呈�
         其中 $Q_X$ 是 $\mathcal{N}(0, 1)$ 的分位数函数（累积分布函数的逆）。这16个值构成了NF4数据类型的精确定义。
 
     2.  **量化权重**: 对一个给定的权重张量，首先通过块量化（block-wise）将其归一化到 `[-1, 1]` 区间，然后将每个归一化后的值映射到NF4码表中最近的一个值。
-
-![NF4 Quantization](images/5_1.jpg)
+![NF4 Quantization](./qlora/images/5_1.jpg)
 <center>图2: 不同4-bit数据类型的性能对比。NF4（蓝色）为正态分布的数据提供了最优的量化精度，显著优于传统的4-bit浮点数（FP4）。</center>
 
 ### 1.4 关键技术二：双重量化 (Double Quantization, DQ)
@@ -113,8 +112,12 @@ graph TD
     *   主干网络计算 $X \cdot W_{\text{bf16}}$。
     *   LoRA旁路网络计算 $X  L_1  L_2$ (BF16)。
     *   最终输出 `Y` 是两部分之和，公式为：
-        $$Y_bf16 = X_bf16 * doubleDequant(c1, c2_fp8, W_nf4) + X_bf16 * L1_bf16 * L2_bf16
-        $$
+        $$Y_{\text{bf16}} = X_{\text{bf16}} \cdot \text{doubleDequant}(c_{1}, c_{2}, W_{\text{nf4}}) + X_{\text{bf16}} \cdot L_1 \cdot L_2$$
+        这个过程对应论文中的公式(5)。`doubleDequant` 是双重量化的逆过程，它将低精度权重恢复至计算精度（BF16）。根据论文公式(6)，其定义如下：
+        $$ \text{dequant}(\text{dequant}(c_{1}^{\text{FP32}}, c_{2}^{\text{FP8}}), W^{\text{NF4}}) = W^{\text{BF16}} $$
+        整个反量化过程包含两个核心步骤：
+        1.  **反量化第一级常数**: 首先，使用32-bit的第二级量化常数 $c_1$ 来反量化8-bit的第一级量化常数 $c_2$，将其恢复为32-bit浮点数。
+        2.  **反量化权重**: 接着，使用恢复的第一级量化常数来反量化4-bit的权重 $W$，最终得到用于计算的BF16权重。
 
 2.  **反向传播与更新**:
     *   损失函数的梯度在整个计算图上以BF16精度进行反向传播。
@@ -147,7 +150,7 @@ QLoRA在资源节约方面的优势是革命性的。
     *   常规16-bit微调一个65B模型需要 **>780 GB** 显存。
     *   使用QLoRA微调，仅需 **<48 GB** 显存。
 
-![Memory Footprint](images/25_0.jpg)
+![Memory Footprint](./qlora/images/25_0.jpg)
 <center>图4: 不同规模LLaMA模型使用QLoRA微调时的显存占用分解。即使是33B模型，也能在24GB显存的GPU上进行训练（需借助分页优化器）。</center>
 
 ## 3. 应用与实践
@@ -156,12 +159,7 @@ QLoRA在资源节约方面的优势是革命性的。
 
 *   **适用模型**:
     QLoRA具有良好的通用性，论文中验证过的模型架构包括：
-    *   LLaMA
-    *   T5
-    *   RoBERTa
-    *   OPT
-    *   BLOOM
-    *   Pythia
+    *   LLaMA/ T5/ RoBERTa/ OPT/ BLOOM/ Pythia
 
 *   **典型案例：Guanaco聊天机器人**:
     研究团队使用QLoRA在OASST1（一个开源、高质量的对话数据集）上微调LLaMA模型，训练出了**Guanaco**模型家族。
