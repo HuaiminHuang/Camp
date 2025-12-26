@@ -1,0 +1,51 @@
+2025-12-26 22:00:29,493 | INFO | uvicorn.error | Will watch for changes in these directories: ['C:\\Users\\hhm18\\Desktop\\course\\MyState\\fastapi']
+2025-12-26 22:00:29,497 | INFO | uvicorn.error | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-12-26 22:00:29,499 | INFO | uvicorn.error | Started reloader process [34968] using WatchFiles
+2025-12-26 22:00:29,915 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:30,280 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:30,688 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:30,730 | INFO | uvicorn.error | Started server process [5148]
+2025-12-26 22:00:30,732 | INFO | uvicorn.error | Waiting for application startup.
+2025-12-26 22:00:30,737 | INFO | uvicorn.error | Application startup complete.
+2025-12-26 22:00:31,100 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:31,524 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:31,885 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:32,295 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:32,712 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:33,118 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:33,528 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:33,889 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:34,297 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:34,706 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:35,112 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:35,522 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:35,925 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:36,329 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:36,732 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:37,146 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:00:37,408 | INFO | uvicorn.error | Shutting down
+2025-12-26 22:00:37,511 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-12-26 22:00:37,515 | INFO | uvicorn.error | Application shutdown complete.
+2025-12-26 22:00:37,518 | INFO | uvicorn.error | Finished server process [5148]
+2025-12-26 22:00:37,586 | INFO | uvicorn.error | Stopping reloader process [34968]
+2025-12-26 22:31:46,906 | INFO | uvicorn.error | Will watch for changes in these directories: ['C:\\Users\\hhm18\\Desktop\\course\\MyState\\fastapi']
+2025-12-26 22:31:46,907 | INFO | uvicorn.error | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-12-26 22:31:46,910 | INFO | uvicorn.error | Started reloader process [27956] using WatchFiles
+2025-12-26 22:31:47,975 | INFO | uvicorn.error | Started server process [36292]
+2025-12-26 22:31:47,978 | INFO | uvicorn.error | Waiting for application startup.
+2025-12-26 22:31:47,978 | INFO | uvicorn.error | Application startup complete.
+2025-12-26 22:36:40,134 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:36:40,138 | WARNING | uvicorn.error | WatchFiles detected changes in 'PathParams.py'. Reloading...
+2025-12-26 22:36:40,145 | INFO | uvicorn.error | Shutting down
+2025-12-26 22:36:40,251 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-12-26 22:36:40,254 | INFO | uvicorn.error | Application shutdown complete.
+2025-12-26 22:36:40,256 | INFO | uvicorn.error | Finished server process [36292]
+2025-12-26 22:36:40,693 | INFO | watchfiles.main | 1 change detected
+2025-12-26 22:36:41,638 | INFO | uvicorn.error | Started server process [33140]
+2025-12-26 22:36:41,639 | INFO | uvicorn.error | Waiting for application startup.
+2025-12-26 22:36:41,639 | INFO | uvicorn.error | Application startup complete.
+2025-12-26 22:36:53,357 | INFO | uvicorn.error | Shutting down
+2025-12-26 22:36:53,468 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-12-26 22:36:53,469 | INFO | uvicorn.error | Application shutdown complete.
+2025-12-26 22:36:53,473 | INFO | uvicorn.error | Finished server process [33140]
+2025-12-26 22:36:53,559 | INFO | uvicorn.error | Stopping reloader process [27956]
