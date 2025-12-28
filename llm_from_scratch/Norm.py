@@ -47,6 +47,8 @@ def test_Norm():
     RMSN = RMSNorm(d_model)
     norm1 = LN(x)
     norm2 = RMSN(x)
+    
+    print("=" * 20)
     print("gama,beta", LN.gamma.shape, LN.beta.shape)
     print("LN", norm1.shape)
     print("=" * 20)
