@@ -30,3 +30,6 @@ venv/
 .env/
 cache/
 
+# agent文件
+GEMINI.md
+AGENT.md
