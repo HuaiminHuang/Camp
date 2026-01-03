@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="极限">
+  <data key="d0">极限</data>
+  <data key="d1">concept</data>
+  <data key="d2">极限是微积分的基本概念，用于精确定义变量在逼近某一特定数值或无穷远时的行为。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433175</data>
+  <data key="d6"></data>
+</node>
+<node id="微积分">
+  <data key="d0">微积分</data>
+  <data key="d1">concept</data>
+  <data key="d2">微积分是一门数学分支，极限是其核心的出发点。&lt;SEP&gt;微积分是数学的一个主要分支，包含微分(导数)和积分两大核心运算。&lt;SEP&gt;微积分是一种数学工具，为现代科学与工程提供了分析连续系统的语言，是理解复杂动态过程的基础。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449&lt;SEP&gt;chunk-25198b77ef6160f6ff4db9fef4111838&lt;SEP&gt;chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433248</data>
+  <data key="d6"></data>
+</node>
+<node id="变量">
+  <data key="d0">变量</data>
+  <data key="d1">concept</data>
+  <data key="d2">变量是数学中一个可以变化的量，其行为在逼近特定数值或无穷远时由极限定义。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433175</data>
+  <data key="d6"></data>
+</node>
+<node id="数值">
+  <data key="d0">数值</data>
+  <data key="d1">concept</data>
+  <data key="d2">数值是变量可能逼近的具体值，是极限定义中的目标点。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433175</data>
+  <data key="d6"></data>
+</node>
+<node id="无穷远">
+  <data key="d0">无穷远</data>
+  <data key="d1">concept</data>
+  <data key="d2">无穷远是变量可能逼近的一个方向或状态，也是极限定义中考虑的情形之一。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433175</data>
+  <data key="d6"></data>
+</node>
+<node id="行为">
+  <data key="d0">行为</data>
+  <data key="d1">concept</data>
+  <data key="d2">行为指变量在逼近某一数值或无穷远时所表现出的变化趋势或特性，是极限定义的核心对象。</data>
+  <data key="d3">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433175</data>
+  <data key="d6"></data>
+</node>
+<node id="导数">
+  <data key="d0">导数</data>
+  <data key="d1">concept</data>
+  <data key="d2">导数是一个数学概念，用于刻画函数在某一点的瞬时变化率。&lt;SEP&gt;导数是微积分中的基本概念，描述函数在某一点处的变化率。</data>
+  <data key="d3">chunk-e5250afb7da1481d94a07ea00f5c824e&lt;SEP&gt;chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433213</data>
+  <data key="d6"></data>
+</node>
+<node id="函数">
+  <data key="d0">函数</data>
+  <data key="d1">concept</data>
+  <data key="d2">函数是数学中描述变量之间关系的一种规则或映射。</data>
+  <data key="d3">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433191</data>
+  <data key="d6"></data>
+</node>
+<node id="几何切线">
+  <data key="d0">几何切线</data>
+  <data key="d1">concept</data>
+  <data key="d2">几何切线是曲线在某一点处的直线，其斜率等于该点处函数的导数。</data>
+  <data key="d3">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433191</data>
+  <data key="d6"></data>
+</node>
+<node id="瞬时变化率">
+  <data key="d0">瞬时变化率</data>
+  <data key="d1">concept</data>
+  <data key="d2">瞬时变化率是描述一个量在某一特定时刻变化快慢的度量。</data>
+  <data key="d3">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433191</data>
+  <data key="d6"></data>
+</node>
+<node id="实际变化规律">
+  <data key="d0">实际变化规律</data>
+  <data key="d1">concept</data>
+  <data key="d2">实际变化规律是指现实世界中物理量或其他变量随时间或条件变化的模式。</data>
+  <data key="d3">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433191</data>
+  <data key="d6"></data>
+</node>
+<node id="积分">
+  <data key="d0">积分</data>
+  <data key="d1">concept</data>
+  <data key="d2">积分是一种数学运算，被理解为导数的逆运算，通过累积无穷小量来计算面积、体积或总效应。&lt;SEP&gt;积分是微积分中的一个基本概念，用于描述函数在某个区间上的整体累积。</data>
+  <data key="d3">chunk-25198b77ef6160f6ff4db9fef4111838&lt;SEP&gt;chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433232</data>
+  <data key="d6"></data>
+</node>
+<node id="无穷小量">
+  <data key="d0">无穷小量</data>
+  <data key="d1">concept</data>
+  <data key="d2">无穷小量是微积分中趋近于零的量，是积分运算中进行累积的基础单元。</data>
+  <data key="d3">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433213</data>
+  <data key="d6"></data>
+</node>
+<node id="面积">
+  <data key="d0">面积</data>
+  <data key="d1">concept</data>
+  <data key="d2">面积是二维图形大小的度量，是积分运算可以计算的对象之一。</data>
+  <data key="d3">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433213</data>
+  <data key="d6"></data>
+</node>
+<node id="体积">
+  <data key="d0">体积</data>
+  <data key="d1">concept</data>
+  <data key="d2">体积是三维物体所占空间大小的度量，是积分运算可以计算的对象之一。</data>
+  <data key="d3">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433213</data>
+  <data key="d6"></data>
+</node>
+<node id="总效应">
+  <data key="d0">总效应</data>
+  <data key="d1">concept</data>
+  <data key="d2">总效应是一个概括性概念，指通过累积微小贡献得到的整体结果，是积分运算的应用目标之一。</data>
+  <data key="d3">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433213</data>
+  <data key="d6"></data>
+</node>
+<node id="微分">
+  <data key="d0">微分</data>
+  <data key="d1">concept</data>
+  <data key="d2">微分是微积分中的一个基本概念，用于描述函数的局部变化率。</data>
+  <data key="d3">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433232</data>
+  <data key="d6"></data>
+</node>
+<node id="微积分基本定理">
+  <data key="d0">微积分基本定理</data>
+  <data key="d1">concept</data>
+  <data key="d2">微积分基本定理是微积分中的核心定理，它揭示了微分与积分之间的内在联系。</data>
+  <data key="d3">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433232</data>
+  <data key="d6"></data>
+</node>
+<node id="局部变化">
+  <data key="d0">局部变化</data>
+  <data key="d1">concept</data>
+  <data key="d2">局部变化是微积分中由微分描述的函数在某一点附近的瞬时变化特性。</data>
+  <data key="d3">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433232</data>
+  <data key="d6"></data>
+</node>
+<node id="整体累积">
+  <data key="d0">整体累积</data>
+  <data key="d1">concept</data>
+  <data key="d2">整体累积是微积分中由积分描述的函数在某一区间上的总量或面积。</data>
+  <data key="d3">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433232</data>
+  <data key="d6"></data>
+</node>
+<node id="现代科学">
+  <data key="d0">现代科学</data>
+  <data key="d1">concept</data>
+  <data key="d2">现代科学是受益于微积分分析语言的一个领域，用于理解和研究连续系统。</data>
+  <data key="d3">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433248</data>
+  <data key="d6"></data>
+</node>
+<node id="工程">
+  <data key="d0">工程</data>
+  <data key="d1">concept</data>
+  <data key="d2">工程是受益于微积分分析语言的一个领域，用于设计和分析连续系统。</data>
+  <data key="d3">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433248</data>
+  <data key="d6"></data>
+</node>
+<node id="连续系统">
+  <data key="d0">连续系统</data>
+  <data key="d1">concept</data>
+  <data key="d2">连续系统是现代科学与工程中需要被分析的对象，其分析语言由微积分提供。</data>
+  <data key="d3">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433248</data>
+  <data key="d6"></data>
+</node>
+<node id="复杂动态过程">
+  <data key="d0">复杂动态过程</data>
+  <data key="d1">concept</data>
+  <data key="d2">复杂动态过程是需要被理解的对象，其理解基础由微积分提供。</data>
+  <data key="d3">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1767433248</data>
+  <data key="d6"></data>
+</node>
+<edge source="极限" target="微积分">
+  <data key="d7">1.0</data>
+  <data key="d8">极限是微积分这门学科的出发点，为其提供精确定义的基础。</data>
+  <data key="d9">出发点,基础概念</data>
+  <data key="d10">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433175</data>
+  <data key="d13"></data>
+</edge>
+<edge source="极限" target="变量">
+  <data key="d7">1.0</data>
+  <data key="d8">极限被用来精确定义变量在逼近某一数值或无穷远时的行为。</data>
+  <data key="d9">定义行为,逼近</data>
+  <data key="d10">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433176</data>
+  <data key="d13"></data>
+</edge>
+<edge source="极限" target="数值">
+  <data key="d7">1.0</data>
+  <data key="d8">极限用于定义变量在逼近某一具体数值时的行为。</data>
+  <data key="d9">定义目标,逼近</data>
+  <data key="d10">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433176</data>
+  <data key="d13"></data>
+</edge>
+<edge source="极限" target="无穷远">
+  <data key="d7">1.0</data>
+  <data key="d8">极限用于定义变量在逼近无穷远时的行为。</data>
+  <data key="d9">定义目标,逼近</data>
+  <data key="d10">chunk-48669d849b8f743b728b4abe0332f449</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433176</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="积分">
+  <data key="d7">1.0</data>
+  <data key="d8">积分是微积分这一数学分支中的两大核心运算之一。</data>
+  <data key="d9">包含关系,核心运算</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433215</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="导数">
+  <data key="d7">1.0</data>
+  <data key="d8">导数(微分)是微积分这一数学分支中的两大核心运算之一。</data>
+  <data key="d9">包含关系,核心运算</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433215</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="现代科学">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分为现代科学提供了分析连续系统的语言。</data>
+  <data key="d9">基础语言,提供工具</data>
+  <data key="d10">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433249</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="工程">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分为工程提供了分析连续系统的语言。</data>
+  <data key="d9">基础语言,提供工具</data>
+  <data key="d10">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433249</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="连续系统">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分提供了分析连续系统的语言。</data>
+  <data key="d9">分析工具,描述语言</data>
+  <data key="d10">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433249</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微积分" target="复杂动态过程">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分是理解复杂动态过程的基础。</data>
+  <data key="d9">分析框架,理解基础</data>
+  <data key="d10">chunk-faa5c0d4abe0608d3be59744c5fa5c1b</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433249</data>
+  <data key="d13"></data>
+</edge>
+<edge source="导数" target="瞬时变化率">
+  <data key="d7">1.0</data>
+  <data key="d8">导数被定义为函数在某一点的瞬时变化率。</data>
+  <data key="d9">数学定义,核心概念</data>
+  <data key="d10">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433192</data>
+  <data key="d13"></data>
+</edge>
+<edge source="导数" target="几何切线">
+  <data key="d7">1.0</data>
+  <data key="d8">导数是连接函数与几何切线的核心工具，其几何意义是切线的斜率。</data>
+  <data key="d9">几何意义,连接工具</data>
+  <data key="d10">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433192</data>
+  <data key="d13"></data>
+</edge>
+<edge source="导数" target="实际变化规律">
+  <data key="d7">1.0</data>
+  <data key="d8">导数是连接数学理论与实际变化规律的核心工具，用于描述和预测实际变化。</data>
+  <data key="d9">应用连接,核心工具</data>
+  <data key="d10">chunk-e5250afb7da1481d94a07ea00f5c824e</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433192</data>
+  <data key="d13"></data>
+</edge>
+<edge source="导数" target="积分">
+  <data key="d7">1.0</data>
+  <data key="d8">积分被理解为导数的逆运算，两者构成微积分中的基本对偶关系。</data>
+  <data key="d9">数学关系,逆运算</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433214</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="无穷小量">
+  <data key="d7">1.0</data>
+  <data key="d8">积分运算通过累积无穷小量来实现对面积、体积或总效应的计算。</data>
+  <data key="d9">累积过程,计算基础</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433214</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="面积">
+  <data key="d7">1.0</data>
+  <data key="d8">积分可以用来计算二维图形的面积。</data>
+  <data key="d9">度量求解,计算应用</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433214</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="体积">
+  <data key="d7">1.0</data>
+  <data key="d8">积分可以用来计算三维物体的体积。</data>
+  <data key="d9">度量求解,计算应用</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433215</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="总效应">
+  <data key="d7">1.0</data>
+  <data key="d8">积分可以用来计算通过累积微小贡献得到的整体总效应。</data>
+  <data key="d9">整体求解,计算应用</data>
+  <data key="d10">chunk-25198b77ef6160f6ff4db9fef4111838</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433215</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="整体累积">
+  <data key="d7">1.0</data>
+  <data key="d8">积分是描述函数整体累积的数学工具。</data>
+  <data key="d9">数学描述,概念定义</data>
+  <data key="d10">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433233</data>
+  <data key="d13"></data>
+</edge>
+<edge source="积分" target="微积分基本定理">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分基本定理将微分与积分紧密联系起来，揭示了局部变化与整体累积的统一性。</data>
+  <data key="d9">数学基础,理论联系</data>
+  <data key="d10">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433233</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微分" target="微积分基本定理">
+  <data key="d7">1.0</data>
+  <data key="d8">微积分基本定理将微分与积分紧密联系起来，揭示了局部变化与整体累积的统一性。</data>
+  <data key="d9">数学基础,理论联系</data>
+  <data key="d10">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433233</data>
+  <data key="d13"></data>
+</edge>
+<edge source="微分" target="局部变化">
+  <data key="d7">1.0</data>
+  <data key="d8">微分是描述函数局部变化的数学工具。</data>
+  <data key="d9">数学描述,概念定义</data>
+  <data key="d10">chunk-889461a50d0899b1cd59590c5a6cfc79</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1767433233</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>
