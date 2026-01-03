@@ -1,0 +1,5 @@
+nohup: ignoring input
+开始批量推理，Batch Size: 32...
+
+当前 Batch 准确率: 81.25%
+批量结果已保存至 ./res/
