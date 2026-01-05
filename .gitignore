@@ -24,6 +24,7 @@ CLIP/
 *.joblib
 *.env
 *.pt
+*.mp4
 
 # 环境相关
 .env
