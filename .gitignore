@@ -33,5 +33,6 @@ venv/
 cache/
 
 # agent文件
+.iflow/
 GEMINI.md
 AGENT.md
