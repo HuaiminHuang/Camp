@@ -10,6 +10,10 @@ Qwen2.5-VL 是 Qwen 视觉语言系列的最新旗舰模型，在基础能力和
 
 Qwen2.5-VL 的卓越性能源于其在模型架构、数据处理和训练策略上的一系列技术创新。
 
+<div align="center">
+    <img src="./images/2_0.jpg" width=75%>
+</div>
+
 ### 1.1 高效且支持动态分辨率的视觉编码器 (Vision Encoder)
 
 为了高效地处理各种尺寸的视觉输入，模型对视觉编码器（ViT）进行了深度优化。
@@ -58,6 +62,10 @@ class Qwen2_5_VisionPatchEmbed(nn.Module):
 `Conv3d` 的使用是其原生视频处理能力的核心体现。
 
 ### 1.2 先进的时空位置编码 (MRoPE)
+
+<div align="center">
+    <img src="./images/MRoPE.png" width=75%>
+</div>
 
 **对齐绝对时间的多模态旋转位置嵌入 (MRoPE)** 是模型能够理解复杂时空关系的关键。它将位置编码扩展至**时间 (T)、高度 (H)、宽度 (W)** 三个维度，并通过与绝对时间戳对齐，实现了对视频事件真实节奏的感知。
 

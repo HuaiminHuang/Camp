@@ -8,9 +8,12 @@
 .
 ├── README.md                           # 项目说明文档
 ├── .env                                # 环境变量配置（DashScope API Key）
-├── docs/                               # 文档资料
-│   ├── qwen2_5VL.mmd                   # Qwen2.5-VL 学习笔记（思维导图）
-│   └── Qwen2.5-VL_Technical_Report.md  # Qwen2.5-VL 技术报告（官方）
+├── images/                             # 项目图片资源
+│   ├── 0_0.jpg
+│   ├── 2_0.jpg
+│   └── MRoPE.png
+├── logs/                               # 日志目录
+│   └── test.log                        # 测试日志
 ├── official/                           # 官方实现代码（HuggingFace Transformers）
 │   ├── __init__.py
 │   ├── configuration_qwen2_5_vl.py
@@ -33,17 +36,13 @@
 │       └── images/                     # 示例图片
 ├── tests/                              # 测试脚本与资源
 │   ├── qwenVL_test.py                  # DashScope API 测试脚本
+│   ├── __pycache__/
 │   └── test_file/                      # 测试用图片与视频
 │       ├── MHWs.jpg
 │       ├── mila.png
 │       └── Monster_Hunter_Wilds_the_fourth_updating.mp4
-├── assets/                             # 静态资源
-│   └── images/                         # 项目图片资源
-│       ├── 0_0.jpg
-│       └── 2_0.jpg
-├── logs/                               # 日志目录
-│   └── test.log                        # 测试日志
-└── Qwen3-VL/                           # （忽略）官方 Qwen3-VL 仓库（git clone）
+├── qwen2_5VL.mmd                       # Qwen2.5-VL 学习笔记（思维导图）
+└── Qwen2.5-VL_Technical_Report.md      # Qwen2.5-VL 技术报告（官方）
 ```
 
 ## 🎯 各部分详解
@@ -64,9 +63,10 @@
 - `annotated_vision_process.py`：对官方 `vision_process.py` 的详细注释，解释动态分辨率、动态帧率采样等预处理逻辑
 - `run_model_test.py`：本地模型测试脚本（需下载预训练权重）
 
-### 3. 文档资料 (`docs/`)
+### 3. 文档文件
+项目根目录下存放了以下关键文档：
 - **Qwen2.5-VL 技术报告**：官方发布的技术报告，详细阐述模型架构、训练策略、数据构造与实验结果。
-- **学习笔记**：对 Qwen2.5-VL 关键技术的总结与思考，包括动态分辨率、MRoPE、文档解析等。
+- **Qwen2.5-VL 学习笔记**：对 Qwen2.5-VL 关键技术的总结与思考，包括动态分辨率、MRoPE、文档解析等（`qwen2_5VL.mmd`）。
 
 ### 4. 补充资料 (`supplementary/`)
 虽然本项目重点为 Qwen2.5-VL，但此目录存放了 Qwen3-VL 的相关资料，便于对比学习与知识延伸：
@@ -79,14 +79,11 @@
   - 支持本地图片/视频文件上传与分析
 - `test_file/`：测试用的图片与视频文件。
 
-### 6. 静态资源 (`assets/`)
-存放项目所需的图片资源，主要来自技术报告中的示意图。
+### 6. 图片资源 (`images/`)
+存放项目所需的图片资源，主要来自技术报告中的示意图，位于根目录的 `images/` 文件夹中。
 
 ### 7. 日志 (`logs/`)
 运行测试脚本时产生的日志文件。
-
-### 8. 忽略目录 (`Qwen3-VL/`)
-此目录为从官方仓库 git clone 的 Qwen3-VL 完整项目，与本项目主要内容无关，仅作参考，请忽略。
 
 ## 🚀 快速开始
 
@@ -121,14 +118,14 @@ model = Qwen2_5_VLForConditionalGeneration.from_pretrained("Qwen/Qwen2.5-VL-7B-I
 阅读 `src/` 目录下的代码，特别是 `annotated_vision_process.py` 中的详细注释，可以帮助理解 Qwen2.5-VL 的动态分辨率、动态帧率采样等核心预处理逻辑。
 
 ## 📚 学习路线建议
-1. **入门**：阅读 `docs/Qwen2.5-VL_Technical_Report.md` 了解模型整体设计。
+1. **入门**：阅读 `Qwen2.5-VL_Technical_Report.md` 了解模型整体设计。
 2. **代码实践**：运行 `tests/qwenVL_test.py` 体验模型能力。
 3. **深入架构**：阅读 `src/annotated_vision_process.py` 和 `src/vision_modules.py` 理解视觉编码器。
 4. **对比学习**：参考 `supplementary/qwen3_vl/` 中的资料，了解 Qwen3-VL 的改进点。
 5. **官方集成**：查看 `official/` 中的代码，学习如何在 HuggingFace 生态中使用模型。
 
 ## 🔧 注意事项
-- 本项目重点为 **Qwen2.5-VL**，`Qwen3-VL` 目录仅为补充资料，请勿混淆。
+- 本项目重点为 **Qwen2.5-VL**，`supplementary/qwen3_vl/` 目录中的 Qwen3-VL 资料仅为补充，请勿混淆。
 - 使用 DashScope API 需要相应的权限与配额，请确保账户可用。
 - 本地运行模型需要较大的 GPU 内存，建议使用 API 测试或降级模型尺寸。
 
@@ -140,4 +137,4 @@ model = Qwen2_5_VLForConditionalGeneration.from_pretrained("Qwen/Qwen2.5-VL-7B-I
 - 感谢 HuggingFace 社区提供的模型库与工具链。
 
 ---
-*最后更新：2026年1月5日*
+*最后更新：2026年1月6日*
