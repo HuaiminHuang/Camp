@@ -1,0 +1,24 @@
+# SigLIP项目依赖（匹配TrainingCamp环境）
+
+# 核心深度学习库 - CUDA 11.8版本
+torch==2.6.0+cu118
+torchvision==0.21.0+cu118
+
+# HuggingFace Transformers和相关
+transformers==4.56.2
+
+# 图像处理
+pillow==10.4.0
+
+# 数据科学和可视化
+numpy==1.26.4
+matplotlib==3.10.7
+
+# HTTP请求
+requests==2.32.3
+
+# 用于模型下载
+huggingface-hub==0.35.3
+
+# 注意：CUDA版本后缀表示需要CUDA 11.8支持
+# 如需CPU版本，请使用：torch==2.6.0 torchvision==0.21.0

@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+TrainingCamp/
+TrainingCamp*/
+trainingcamp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Output directories
+results/  # 注意：results目录中的可视化结果默认被忽略，但目录结构保留
+outputs/
+
+# Model weights (large files)
+google/siglip2-base-patch16-naflex/  # 模型权重应该通过hf-cli下载，不跟踪大文件
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+
+# Data files (large)
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pt
+*.pth
+
+# Coverage
+.coverage
+htmlcov/
+
+# pytest
+.pytest_cache/

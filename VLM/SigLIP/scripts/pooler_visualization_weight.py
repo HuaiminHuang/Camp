@@ -9,7 +9,7 @@ from transformers.image_utils import load_image
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 # load the model and processor
-ckpt = "./google/siglip2-base-patch16-naflex"
+ckpt = "../google/siglip2-base-patch16-naflex"
 model = AutoModel.from_pretrained(ckpt).to(device)
 model.eval()
 processor = AutoProcessor.from_pretrained(ckpt)
@@ -22,8 +22,8 @@ t = [f"This is a photo of a {item}" for item in labels]
 # load the image
 url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/pipeline-cat-chonk.jpeg"
 img1 = Image.open(requests.get(url, stream=True).raw)
-img2 = load_image("./dog.png")
-img3 = load_image("./cat_and_dog.jpg")
+img2 = load_image("../data/dog.png")
+img3 = load_image("../data/cat_and_dog.jpg")
 images = [img1, img2, img3]
 
 inputs = processor(text=t, images=images, return_tensors="pt").to(model.device)
