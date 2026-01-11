@@ -1,0 +1,54 @@
+python .\structure_V3.py
+(paddle-ocr) PS C:\Users\hhm18\Desktop\course\paddle-ocr> python .\structure_V3.py                                                                                                     Checking connectivity to the model hosters, this may take a while. To bypass this check, set `DISABLE_MODEL_SOURCE_CHECK` to `True`.
+信息: 用提供的模式无法找到文件。
+C:\Users\hhm18\miniconda3\envs\paddle-ocr\lib\site-packages\paddle\utils\cpp_extension\extension_utils.py:718: UserWarning: No ccache found. Please be aware that recompiling all sourc
+e files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md                                                           warnings.warn(warning_message)
+Creating model: ('PP-LCNet_x1_0_doc_ori', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\hhm18\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0111 01:08:50.306420 19396 gpu_resources.cc:114] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 12.6
+Creating model: ('UVDoc', None)
+ectory manually: `C:\Users\hhm18\.paddlex\official_models\RT-DETR-L_wired_table_cell_det`.
+Creating model: ('RT-DETR-L_wireless_table_cell_det', None)
+ Paddle with compatible CUDNN version.
+Creating model: ('PP-LCNet_x1_0_doc_ori', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\hhm18\.paddlex\official_models\PP-LCNet_x1_0_doc_ori`.
+Creating model: ('PP-LCNet_x1_0_textline_ori', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\hhm18\.paddlex\official_models\PP-LCNet_x1_0_textline_ori`.
+Creating model: ('PP-OCRv5_server_det', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\hhm18\.paddlex\official_models\PP-OCRv5_server_det`.
+Creating model: ('PP-OCRv5_server_rec', None)
+Model files already exist. Using cached files. To redownload, please delete the directory manually: `C:\Users\hhm18\.paddlex\official_models\PP-OCRv5_server_rec`.
+[DONE] PPStructureV3output\Financial Risk.md | time = 110.557s
+====================================================================================================
+start processing ./input_pdf/国家金融监督管理总局关于 印发《银行保险机构涉刑案件风险防控 管理办法》的通知.pdf
+====================================================================================================
+[DONE] PPStructureV3output\国家金融监督管理总局关于 印发《银行保险机构涉刑案件风险防控 管理办法》的通知.md | time = 15.550s
+====================================================================================================
+start processing ./input_pdf/国家金融监督管理总局关于印发《银行业 金融机构国别风险管理办法》的通知.pdf
+====================================================================================================
+[DONE] PPStructureV3output\国家金融监督管理总局关于印发《银行业 金融机构国别风险管理办法》的通知.md | time = 21.569s
+====================================================================================================
+start processing ./input_pdf/JRT+0288—2023《银行电子凭证技术规范》0802.pdf
+====================================================================================================
+[DONE] PPStructureV3output\JRT+0288—2023《银行电子凭证技术规范》0802.md | time = 45.420s
+(paddle-ocr) PS C:\Users\hhm18\Desktop\course\paddle-ocr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
