@@ -1,7 +1,7 @@
 # 忽略特定的文件夹
 data/
 dataset/
-imgs/
+# imgs/
 Thesis/
 model/
 code/
